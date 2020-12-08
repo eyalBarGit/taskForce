@@ -1,0 +1,73 @@
+.app-header {
+    width: 100%;
+    .top-part {
+        height: 35px;
+        z-index: 50;
+        padding-inline-start: 5px;
+        padding-inline-end: 5px;
+        width: 100%;
+        h1 {
+            margin: 0;
+            font-weight: 400;
+        }
+        .nav-tools {
+            width: 100%;
+            button {
+                font-weight: bold;
+                margin-inline-end: 5px;
+                background-color: rgba(255, 255, 255, 0.475);
+                &:hover {
+                    background-color: $HoverBtn;
+                }
+            }
+            .left-side {
+                input {
+                    background-color: rgba(255, 255, 255, 0.349);
+                    border-radius: 3px;
+                    border: none;
+                    color: $Text;
+                    &::placeholder {
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+    .bottom-nav {
+        z-index: 50;
+        background-color: rgba(255, 255, 255, 0.007);
+        height: 40px;
+        width: 100%;
+        .btn {
+            margin-inline-start: 15px;
+            background-color: #fefeff6b;
+            color: #ffffff;
+            &:hover {
+                background-color: $HoverBtn;
+
+            }
+        }
+        h1 {
+            font-size: 16px;
+            margin-inline-start: 15px;
+            color: #ffffff;
+        }
+        p {
+            font-size: 14px;
+            margin-inline-start: 5px;
+            color: #ffffff;
+        }
+        .saved {
+            color: gold;
+        }
+    }
+
+
+
+    @media (max-width: 768px) {
+        .desktop-boards {
+            display: none;
+        }
+    }
+ 
+}

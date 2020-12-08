@@ -1,0 +1,74 @@
+.list {
+    border: 1px solid lightgray;
+    background-color: $ListBg;
+    padding: 5px;
+    height: fit-content;
+    width: 260px;
+    border-radius: 3px;
+    max-height: 88vh;
+    margin: 0 2px;
+    .title-container {
+        align-items: flex-start;
+        width: 100%;
+
+        span.drag-handle {
+            width: 100%;
+            height: 100%;
+        }
+        .edit-title {
+            width: 100%;
+        }
+        .list-menu-section {
+            cursor: pointer;
+            padding: 5px 5px;
+            border-radius: 3px;
+            &:hover {
+                background-color: $VeryLigtGray;
+            }
+            &:active {
+                transform: scale(0.905);
+            }
+        }
+        .list-title {
+            padding-inline-end: 5px;
+            padding-block-start: 5px;
+            padding-block-end: 3px;
+            width: 100%;
+            font-size: 14px;
+            font-weight: 500;
+            margin: 0;
+        }
+        .cards-count {
+            font-size: 10px;
+            margin: 0;
+        }
+    }
+    .main-container {
+        width: 100%;
+        padding-bottom: 3px;
+        overflow-x: auto;
+    }
+    .add-card-section {
+        width: 100%;
+        .plus-sign {
+            color: #091e42;
+        }
+        p {
+            width: 100%;
+            margin-inline-start: 5px;
+            font-size: 14px;
+            margin-block-start: 0;
+            margin-block-end: 0;
+            height: 100%;
+        }
+        .add-card-text {
+            width: 100%;
+            padding: 0 15px;
+            &:hover {
+                background-color: rgb(226, 226, 226);
+                cursor: pointer;
+                border-radius: 5px;
+            }
+        }
+    }
+}

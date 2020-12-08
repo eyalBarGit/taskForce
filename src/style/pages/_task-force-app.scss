@@ -1,0 +1,29 @@
+.task-force-app {
+  margin-top: 20px;
+  position: relative;
+
+  @media (max-width:850px) {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+  .columns {
+    @media (max-width:800px) {
+      margin: 0, auto;
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  .add-column {
+    @media (max-width:900px) {
+      position: fixed;
+      right: 0;
+      top: 75px;
+    }
+
+  }
+
+  
+}
+

@@ -1,0 +1,36 @@
+.board-background {
+    background-color: $menuBg;
+    margin-top: 5px;
+    border-radius: 0 5px 5px 0;
+    z-index:200 !important;
+    .close-btn {
+        width: 100%;
+        justify-content: flex-end;
+        padding: 15px 15px 0 0;
+    }
+    .main-content {
+        width: 350px;
+        height: 500px;
+        z-index: 20;
+
+        img {
+            width: 146px;
+            height: 95px;
+            border-radius: 5px;
+            object-fit: cover;
+            margin-inline-end: 5px;
+            border-radius: 3px;
+            -webkit-box-shadow: 6px 5px 9px -1px rgba(0, 0, 0, 0.74);
+            box-shadow: 6px 5px 9px -1px rgba(0, 0, 0, 0.74);
+            &:hover {
+                -webkit-box-shadow: -1px 4px 12px 3px #c5c5c5;
+                box-shadow: -1px 4px 12px 3px #c5c5c5;
+                cursor: pointer;
+            }
+            &:active{
+                
+                transform: scale(0.980);
+            }
+        }
+    }
+}

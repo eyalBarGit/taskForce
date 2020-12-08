@@ -1,0 +1,30 @@
+.board-list {
+    min-width: 550px;
+    max-width: 650px;
+    .container {
+        position: relative;
+        img {
+            width: 150px;
+            height: 100px;
+            border-radius: 5px;
+        }
+        .boards {
+            position: relative;
+        }
+        p {
+            position: absolute;
+            padding: 5px;
+            color: #fff;
+            background-color: rgba(0, 0, 0, 0.24);
+            width: 150px;
+            font-weight: bolder;
+            top: 0;
+        }
+    }
+    .fav-bards {
+        width: 650px;
+        .fav-boards-container {
+            position: relative;
+        }
+    }
+}
