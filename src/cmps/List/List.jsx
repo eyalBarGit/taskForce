@@ -149,7 +149,6 @@ export function List({ listId, lists, cards, currBoard, index, }) {
 
 
                     </div>
-                    {/* <div><p>add list</p></div> */}
                 </MainDragContainer>
             )
             }

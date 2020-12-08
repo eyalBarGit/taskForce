@@ -1,23 +1,4 @@
-// const { createCard } = require('../store/actions/listActions')
-const UTILS = require('./utils')
-
-
-// async function exampleFunction(cardsToSplit) {
-//   const cards = []
-//   for (let i = 0; i < cardsToSplit.length; i++) {
-//     const secondaryCard = {
-//       currCards: [],
-//       score: 0
-//     }
-
-//     secondaryCard.currCards[0] = cardsToSplit[i]
-//     secondaryCard.score = _scoreCal(secondaryCard.currCards)
-
-//     cards.push(secondaryCard)
-//   }
-//   return cards
-// }
-
+import UTILS from './utils'
 
 async function deleteList(currBoard, currList) {
   const newLists = currBoard.lists
