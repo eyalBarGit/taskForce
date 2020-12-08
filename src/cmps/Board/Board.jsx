@@ -84,7 +84,6 @@ export function Board(props) {
 
 
     useEffect(() => {
-        console.log('board rerendered')
         loadCurrBoard()
         return () => {
             dispatch(setActiveBoard(''))

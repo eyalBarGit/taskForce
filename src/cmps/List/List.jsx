@@ -46,7 +46,6 @@ export function List({ listId, lists, cards, currBoard, index, }) {
 
     useEffect(() => {
         getCurrList()
-        console.log('listRendered')
         return () => {
 
         }
