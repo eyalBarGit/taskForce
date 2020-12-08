@@ -63,7 +63,7 @@ export function BoardList(props) {
                                 <Link to={`boards/${board.id}`}>
                                     <img
                                         alt="boards"
-                                        src={`/images/bgs/${board.backgroundImg}.jpg`}></img>
+                                        src={require(`../../assets/images/bgs/${board.backgroundImg}.jpg`)}></img>
                                     <p>{board.name}</p>
                                 </Link>
                             </div>
