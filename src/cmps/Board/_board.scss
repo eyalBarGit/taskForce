@@ -7,10 +7,11 @@
     img.board-background {
         z-index: -1 !important;
         position: absolute;
-        top: 0;
+        top: -5px;
         width: 100%;
         height: 100vh;
         object-fit: cover;
+        border-radius: 0;;
     }
     .container-main {
         height: 35px;
