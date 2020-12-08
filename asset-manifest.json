@@ -1,22 +1,23 @@
 {
   "files": {
-    "main.css": "/taskforce/static/css/main.a434c85a.chunk.css",
-    "main.js": "/taskforce/static/js/main.00342402.chunk.js",
-    "main.js.map": "/taskforce/static/js/main.00342402.chunk.js.map",
+    "main.css": "/taskforce/static/css/main.6c187791.chunk.css",
+    "main.js": "/taskforce/static/js/main.166800fc.chunk.js",
+    "main.js.map": "/taskforce/static/js/main.166800fc.chunk.js.map",
     "runtime-main.js": "/taskforce/static/js/runtime-main.95470a51.js",
     "runtime-main.js.map": "/taskforce/static/js/runtime-main.95470a51.js.map",
     "static/css/2.8dbe6964.chunk.css": "/taskforce/static/css/2.8dbe6964.chunk.css",
-    "static/js/2.fdc7fc78.chunk.js": "/taskforce/static/js/2.fdc7fc78.chunk.js",
-    "static/js/2.fdc7fc78.chunk.js.map": "/taskforce/static/js/2.fdc7fc78.chunk.js.map",
+    "static/js/2.ddf5db8c.chunk.js": "/taskforce/static/js/2.ddf5db8c.chunk.js",
+    "static/js/2.ddf5db8c.chunk.js.map": "/taskforce/static/js/2.ddf5db8c.chunk.js.map",
     "index.html": "/taskforce/index.html",
-    "precache-manifest.3d1137a3062d7cad063b773f4378c23a.js": "/taskforce/precache-manifest.3d1137a3062d7cad063b773f4378c23a.js",
+    "precache-manifest.a05d205761395ca3b5ed8caff5d255b3.js": "/taskforce/precache-manifest.a05d205761395ca3b5ed8caff5d255b3.js",
     "service-worker.js": "/taskforce/service-worker.js",
     "static/css/2.8dbe6964.chunk.css.map": "/taskforce/static/css/2.8dbe6964.chunk.css.map",
-    "static/css/main.a434c85a.chunk.css.map": "/taskforce/static/css/main.a434c85a.chunk.css.map",
-    "static/js/2.fdc7fc78.chunk.js.LICENSE.txt": "/taskforce/static/js/2.fdc7fc78.chunk.js.LICENSE.txt",
+    "static/css/main.6c187791.chunk.css.map": "/taskforce/static/css/main.6c187791.chunk.css.map",
+    "static/js/2.ddf5db8c.chunk.js.LICENSE.txt": "/taskforce/static/js/2.ddf5db8c.chunk.js.LICENSE.txt",
     "static/media/boraBora.jpg": "/taskforce/static/media/boraBora.989f4a87.jpg",
     "static/media/lake.jpg": "/taskforce/static/media/lake.c140c866.jpg",
     "static/media/mountains.jpg": "/taskforce/static/media/mountains.736266ce.jpg",
+    "static/media/pink.jpg": "/taskforce/static/media/pink.7e9ebd14.jpg",
     "static/media/purple_nature.jpg": "/taskforce/static/media/purple_nature.72bb8802.jpg",
     "static/media/sky.jpg": "/taskforce/static/media/sky.cc4c0d26.jpg",
     "static/media/water.jpg": "/taskforce/static/media/water.d264abfb.jpg"
@@ -24,8 +25,8 @@
   "entrypoints": [
     "static/js/runtime-main.95470a51.js",
     "static/css/2.8dbe6964.chunk.css",
-    "static/js/2.fdc7fc78.chunk.js",
-    "static/css/main.a434c85a.chunk.css",
-    "static/js/main.00342402.chunk.js"
+    "static/js/2.ddf5db8c.chunk.js",
+    "static/css/main.6c187791.chunk.css",
+    "static/js/main.166800fc.chunk.js"
   ]
 }

@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "95b26890122cd9a530d2e4c116530ac6",
+    "revision": "7e2e0d2640f2ab3acec7f915f361cd27",
     "url": "/taskforce/index.html"
   },
   {
-    "revision": "4df092813df33cf348f7",
+    "revision": "207cd05a813c3dad7c03",
     "url": "/taskforce/static/css/2.8dbe6964.chunk.css"
   },
   {
-    "revision": "b9ddfadfcfec5d601840",
-    "url": "/taskforce/static/css/main.a434c85a.chunk.css"
+    "revision": "53a9b7c841532ad639c7",
+    "url": "/taskforce/static/css/main.6c187791.chunk.css"
   },
   {
-    "revision": "4df092813df33cf348f7",
-    "url": "/taskforce/static/js/2.fdc7fc78.chunk.js"
+    "revision": "207cd05a813c3dad7c03",
+    "url": "/taskforce/static/js/2.ddf5db8c.chunk.js"
   },
   {
     "revision": "b5ff4111ab81c8c91e9e746653eb6fff",
-    "url": "/taskforce/static/js/2.fdc7fc78.chunk.js.LICENSE.txt"
+    "url": "/taskforce/static/js/2.ddf5db8c.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "b9ddfadfcfec5d601840",
-    "url": "/taskforce/static/js/main.00342402.chunk.js"
+    "revision": "53a9b7c841532ad639c7",
+    "url": "/taskforce/static/js/main.166800fc.chunk.js"
   },
   {
     "revision": "0f02bb0319bbbd4cd2af",
@@ -38,6 +38,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "736266ceed0e1c9d5f29d026e853af46",
     "url": "/taskforce/static/media/mountains.736266ce.jpg"
+  },
+  {
+    "revision": "7e9ebd14da45eaf80d0965c3f78b5d21",
+    "url": "/taskforce/static/media/pink.7e9ebd14.jpg"
   },
   {
     "revision": "72bb8802e57df89e6db0605db86fd883",
