@@ -23,7 +23,6 @@ export function Board(props) {
     const state = useSelector(state => state.mainStore)
     const { isCardDetailShown, isBgSideOpen } = state
     const [isAddListVisible, setAddList] = useState(false)
-    const [boardStyle, setBoardStyle] = useState()
     const [currBoard, setCurrBoard] = useState()
 
     const { id } = useParams();
@@ -33,12 +32,6 @@ export function Board(props) {
     const loadCurrBoard = useCallback(() => {
         const currBoard = state.boards[id]
         setCurrBoard(currBoard)
-        const style = {
-            backgroundImage: 'url(/images/bgs/' + currBoard.backgroundImg + '.jpg)',
-            backgroundSize: 'cover',
-            backgroundRepeat: 'no-repeat'
-        }
-        setBoardStyle(style)
         dispatch(setActiveBoard(currBoard))
     },
         [state.boards, id, dispatch,]
@@ -107,7 +100,8 @@ export function Board(props) {
             >
                 {(provided) => {
                     return (
-                        <div ref={boardRef} className="board margin-center align-center" style={boardStyle}>
+                        <div ref={boardRef} className="board margin-center align-center">
+                            <img className="board-background" src={require(`../../assets/images/bgs/${currBoard.backgroundImg}.jpg`)} alt=""/>
                             <MainDndArea
                                 {...provided.droppableProps}
                                 ref={provided.innerRef}

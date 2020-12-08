@@ -3,7 +3,15 @@
     height: 100vh;
     margin-top: -75px;
     padding-top: 70px;
-    // background-image: url('../../assets/images/bgs/water.jpg');
+    width: 100%;
+    img.board-background {
+        z-index: -1 !important;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100vh;
+        object-fit: cover;
+    }
     .container-main {
         height: 35px;
     }
@@ -16,9 +24,9 @@
             min-width: 240px !important;
             height: 35px;
             background-color: rgba(255, 255, 255, 0.475);
-            
+
             &:hover {
-                background-color:$Hover ;
+                background-color: $Hover;
             }
         }
         .list-section {
