@@ -7,9 +7,10 @@ import { CardCover } from './CardCover/CardCover'
 import { RightSideMenu } from './RightSideMenu/RightSideMenu'
 import { CardCheckList } from './CardCheckList/CardCheckList'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faTicketAlt, faClipboardList, faEye } from '@fortawesome/free-solid-svg-icons'
+import { faPencilAlt, faTicketAlt, faClipboardList, faEye } from '@fortawesome/free-solid-svg-icons'
 import { Description } from './Description/Description';
 import { CardLabel } from './CardLabel/CardLabel';
+
 
 export function CardDetails() {
     const state = useSelector(state => state.mainStore)
@@ -25,10 +26,13 @@ export function CardDetails() {
     const history = useHistory()
     const [isCardTitleChange, onSetCardTitle] = useState(false)
     const currCheckList = Object.values(currCard?.checklist)
+    const [isMouseOver, setMouseOver] = useState(false)
+
 
     const ticket = <FontAwesomeIcon icon={faTicketAlt} />
     const clipBoard = <FontAwesomeIcon icon={faClipboardList} />
     const eye = <FontAwesomeIcon icon={faEye} />
+    const pencil = <FontAwesomeIcon icon={faPencilAlt} />
 
 
     const onToggleCardDetails = () => {
@@ -81,6 +85,7 @@ export function CardDetails() {
 
 
     useEffect(() => {
+
         return () => {
         }
     }, [state, currCard.isWatched])
@@ -103,15 +108,27 @@ export function CardDetails() {
                                 <div className="icon">
                                     {ticket}
                                 </div>
-                                <div onClick={() => onSetCardTitle(true)} className="title">
+                                <div onMouseEnter={() => setMouseOver(true)} onMouseLeave={() => setMouseOver(false)} onClick={() => onSetCardTitle(true)} className="title">
                                     {!isCardTitleChange &&
-                                        <h3>{currCard.title} </h3>
+                                        <div className="flex">
+                                            <h3 >{currCard.title} </h3>
+                                            {isMouseOver &&
+                                                <div className="edit-title-pencil">
+                                                    {pencil}
+                                                </div>
+                                            }
+                                        </div>
                                     }
                                 </div>
+
                                 {isCardTitleChange &&
-                                    <form onSubmit={onChangeTitle}>
-                                        <input onChange={onHandleChange} name="title" placeholder={currCard.title} type="text" />
-                                    </form>
+                                    <div className="flex">
+
+                                        <form onSubmit={onChangeTitle}>
+                                            <input autoComplete="off" onChange={onHandleChange} name="title" placeholder={currCard.title} type="text" />
+                                        </form>
+                                        <button onClick={() => onSetCardTitle(false)}>Cancel</button>
+                                    </div>
                                 }
                                 {currCard.isWatched &&
                                     <div className="watched-section">

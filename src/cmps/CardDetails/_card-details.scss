@@ -42,6 +42,10 @@
                     }
                     .title {
                         margin-inline-start: 10px;
+                        .edit-title-pencil {
+                            margin-inline-start: 10px;
+                            font-size: 10px;
+                        }
                     }
 
                     .watched-section {
@@ -54,21 +58,19 @@
                     p {
                         font-size: 10px;
                         margin: 0;
-                      
                     }
                     .remove-date {
                         cursor: pointer;
                     }
-             
                 }
                 .icon {
                     width: 15px;
                     color: $Text;
                 }
-                .labels{
+                .labels {
                     margin-inline-start: 25px;
                     width: 100%;
-                    p{
+                    p {
                         margin-top: 0;
                         margin-bottom: 0;
                     }
