@@ -37,6 +37,10 @@
                 width: 450px;
                 .title-section {
                     height: 50px;
+                    .align-center .flex {
+                        height: 35px;
+                        align-items: center;
+                    }
                     .icon {
                         width: 15px;
                     }
