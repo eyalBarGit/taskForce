@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { toggleBgSide } from '../../store/actions/headerActions'
-import { Link, useParams } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { favoriteBoard, removeSavedBoard } from '../../store/actions/boardActions'
 

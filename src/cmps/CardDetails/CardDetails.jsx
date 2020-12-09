@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { toggleCardDetails, toggleCardWatch, setDueDate } from '../../store/actions/cardActions'
+import { toggleCardDetails, toggleCardWatch, setDueDate, changeCardTitle } from '../../store/actions/cardActions'
 import { useHistory, useParams } from 'react-router-dom'
 import { BlackScreen } from '../CardDetails/BlackScreen/BlackScreen'
 import { CardCover } from './CardCover/CardCover'
@@ -13,15 +13,17 @@ import { CardLabel } from './CardLabel/CardLabel';
 
 export function CardDetails() {
     const state = useSelector(state => state.mainStore)
+    const { activeBoard } = state
+    const { cardid, listid } = useParams();
+    const currBoard = state.boards[activeBoard]
+    const currCard = currBoard.cards[cardid]
     const [isCoverOn, setCoverOn] = useState(false)
     const [istCoverVisibile, setCoverVisibility] = useState(false)
-    const { activeBoard } = state
     const [isDescVisible, setDescVisibility] = useState(false)
+    const [newCardTitle, setCardTitle] = useState({ title: '' })
     const dispatch = useDispatch()
     const history = useHistory()
-    const currBoard = state.boards[activeBoard]
-    const { cardid, listid } = useParams();
-    const currCard = currBoard.cards[cardid]
+    const [isCardTitleChange, onSetCardTitle] = useState(false)
     const currCheckList = Object.values(currCard?.checklist)
 
     const ticket = <FontAwesomeIcon icon={faTicketAlt} />
@@ -58,6 +60,26 @@ export function CardDetails() {
     }
 
 
+
+
+    const onHandleChange = ({ target }) => {
+        const key = target.name
+        const value = target.value
+        newCardTitle[key] = value
+        setCardTitle((prevTitle) => ({
+            ...prevTitle,
+            title: value
+        }))
+    };
+
+    const onChangeTitle = (ev) => {
+        const cardTitle = newCardTitle.title
+        ev.preventDefault()
+        dispatch(changeCardTitle(currCard, cardTitle, currBoard))
+        onSetCardTitle(false)
+    }
+
+
     useEffect(() => {
         return () => {
         }
@@ -81,9 +103,16 @@ export function CardDetails() {
                                 <div className="icon">
                                     {ticket}
                                 </div>
-                                <div className="title ">
-                                    <h3>{currCard.title} </h3>
+                                <div onClick={() => onSetCardTitle(true)} className="title">
+                                    {!isCardTitleChange &&
+                                        <h3>{currCard.title} </h3>
+                                    }
                                 </div>
+                                {isCardTitleChange &&
+                                    <form onSubmit={onChangeTitle}>
+                                        <input onChange={onHandleChange} name="title" placeholder={currCard.title} type="text" />
+                                    </form>
+                                }
                                 {currCard.isWatched &&
                                     <div className="watched-section">
                                         {eye}

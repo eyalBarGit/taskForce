@@ -22,6 +22,25 @@ export function updateCurrList(listId) {
         }
     }
 }
+
+export function changeCardTitle(currCard, cardTitle, currBoard) {
+    return async dispatch => {
+        const data = {
+            currCard: currCard,
+            cardTitle: cardTitle,
+            currBoard: currBoard
+        }
+        try {
+            dispatch(_changeCardTitle(data));
+            // dispatch({ type: 'GET_STATE' });
+        }
+        catch (err) {
+            throw err
+        }
+    }
+}
+
+
 export function deleteCard(currBoard, currList, cardId) {
     return async dispatch => {
         try {
@@ -284,6 +303,12 @@ function _deleteCard(data) {
 function _copyCard(data) {
     return {
         type: 'COPY_CARD',
+        data
+    }
+}
+function _changeCardTitle(data) {
+    return {
+        type: 'SET_CARD_TITLE',
         data
     }
 }

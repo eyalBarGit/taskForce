@@ -474,6 +474,21 @@ export default function (state = initialState, action) {
                     }
                 }
             };
+        case 'SET_CARD_TITLE':
+            return {
+                ...state,
+                boards: {
+                    ...state.boards,
+                    [action.data.currBoard.id]: {
+                        ...state.boards[action.data.currBoard.id],
+                        cards: {
+                            ...state.boards[action.data.currBoard.id].cards,
+                            [action.data.currCard.id]: { ...action.data.currCard, title: action.data.cardTitle },
+                        },
+
+                    }
+                }
+            };
         case 'MOVE_CARD':
             return {
                 ...state,
@@ -543,7 +558,7 @@ export default function (state = initialState, action) {
                             [action.data.currCard.id]:
                             {
                                 ...state.boards[action.data.currBoard.id].cards[action.data.currCard.id],
-                                labels: [...state.boards[action.data.currBoard.id].cards[action.data.currCard.id].labels,action.data.labelColor]
+                                labels: [...state.boards[action.data.currBoard.id].cards[action.data.currCard.id].labels, action.data.labelColor]
                             }
                         },
                     }
