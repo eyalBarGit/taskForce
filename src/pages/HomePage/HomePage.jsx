@@ -27,7 +27,7 @@ export function HomePage(props) {
 
 
     useEffect(() => {
-        dispatch(setActiveBoard('0'))
+        dispatch(setActiveBoard(''))
 
         return () => {
             // componnent willUnmount

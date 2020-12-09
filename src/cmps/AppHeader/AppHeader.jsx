@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { toggleBgSide } from '../../store/actions/headerActions'
-import { Link } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { favoriteBoard, removeSavedBoard } from '../../store/actions/boardActions'
 
@@ -20,10 +20,11 @@ export function AppHeader(props) {
     const state = useSelector(state => state.mainStore)
     const { activeBoard } = state
     const currBoard = state.boards[activeBoard]
-    const navBarTheme = currBoard?.navBarTheme
+    const [navBarTheme, setTheme] = useState()
     const bottomNav = currBoard?.bottomNav
     const [isBgBoardOpen, setIsBgBoardOpen] = useState(false)
     const [isHeaderMenuVisible, setHeaderMenu] = useState(false)
+    const [showSavedTitle, setSaved] = useState(false)
     const dispatch = useDispatch()
 
 
@@ -46,7 +47,17 @@ export function AppHeader(props) {
             return
         }
         dispatch(favoriteBoard(currBoard))
+        setSaved(true)
+        setTimeout(() => {
+            onHideSave()
+
+        }, 500);
     }
+
+    const onHideSave = () => {
+        setSaved(false)
+    }
+
 
     const onToggleAppHeaderMenu = () => {
         setHeaderMenu(!isHeaderMenuVisible)
@@ -54,10 +65,10 @@ export function AppHeader(props) {
 
 
     useEffect(() => {
+        activeBoard ? setTheme('') : setTheme('dark')
         return () => {
-
         }
-    }, [activeBoard, navBarTheme])
+    }, [activeBoard])
 
     return (
         <nav className={`app-header flex column ${navBarTheme}`}>
@@ -87,6 +98,9 @@ export function AppHeader(props) {
                     <button className="btn" onClick={toggleBgBoard}>Change Background</button>
                     <button onClick={onSaveBoard} className={`btn btn-fav-board ${currBoard?.isFav ? 'saved' : ''}`}>{star}</button>
                     <p>Total Lists: {currBoard.listOrder.length}</p>
+                    {showSavedTitle &&
+                        <p className="save-notification">saved!</p>
+                    }
                     {isHeaderMenuVisible &&
                         <AppHeaderMenu onRemoveSavedBoard={removeSavedBoard} currBoard={currBoard} activeBoard={activeBoard} onToggleAppHeaderMenu={onToggleAppHeaderMenu} />
                     }

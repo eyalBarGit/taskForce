@@ -60,9 +60,15 @@
         .saved {
             color: gold;
         }
+        .save-notification{
+            font-size: 16px;
+            color: rgb(129, 219, 102);
+        }
     }
 
-
+.dark{
+    background-color: rgba(0, 0, 0, 0.356);
+}
 
     @media (max-width: 768px) {
         .desktop-boards {
