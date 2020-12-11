@@ -1,0 +1,32 @@
+.boards-menu {
+    position: absolute;
+    width: 200px;
+    min-height: 150px;
+    max-height: 400px;
+    overflow-y: auto;
+    background-color: $menuBg;
+    z-index: 100;
+    a {
+        width: 100%;
+        display: flex;
+        text-align: center;
+    }
+    .board-name {
+        width: 100% !important;
+        position: relative;
+        .check {
+            position: absolute;
+            right: 10px;
+            font-size: 10px;
+        }
+        p {
+            margin: 0 0 5px 0;
+            color: $Text;
+            font-size: small;
+            width: 100%;
+            &:hover {
+                background-color: $Hover;
+            }
+        }
+    }
+}

@@ -25,16 +25,16 @@ export function Board(props) {
     const [isAddListVisible, setAddList] = useState(false)
     const [currBoard, setCurrBoard] = useState()
 
-    const { id } = useParams();
+    const { boardid } = useParams();
     const dispatch = useDispatch()
     const boardRef = useRef(null)
 
     const loadCurrBoard = useCallback(() => {
-        const currBoard = state.boards[id]
+        const currBoard = state.boards[boardid]
         setCurrBoard(currBoard)
         dispatch(setActiveBoard(currBoard))
     },
-        [state.boards, id, dispatch,]
+        [state.boards, boardid, dispatch,]
     )
 
     useEffect(() => {

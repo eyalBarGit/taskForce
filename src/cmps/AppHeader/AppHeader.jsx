@@ -12,7 +12,7 @@ import { faInfoCircle } from '@fortawesome/free-solid-svg-icons'
 import { faBell } from '@fortawesome/free-solid-svg-icons'
 import { faStar } from '@fortawesome/free-solid-svg-icons'
 import { AppHeaderMenu } from './AppHeaderMenu/AppHeaderMenu';
-
+import { BoardsMenu } from './BoardsMenu/BoardsMenu'
 
 
 export function AppHeader(props) {
@@ -25,6 +25,7 @@ export function AppHeader(props) {
     const [isBgBoardOpen, setIsBgBoardOpen] = useState(false)
     const [isHeaderMenuVisible, setHeaderMenu] = useState(false)
     const [showSavedTitle, setSaved] = useState(false)
+    const [isBoardsMenuVis, setBoardsMenuVis] = useState(false)
     const dispatch = useDispatch()
 
 
@@ -63,6 +64,9 @@ export function AppHeader(props) {
         setHeaderMenu(!isHeaderMenuVisible)
     }
 
+    const onToggleBoardsMenu = () => {
+        setBoardsMenuVis(!isBoardsMenuVis)
+    }
 
     useEffect(() => {
         activeBoard ? setTheme('') : setTheme('dark')
@@ -75,15 +79,27 @@ export function AppHeader(props) {
             <div className={`top-part flex ${navBarTheme}`}>
                 <div className="nav-tools flex space-between align-center">
                     <div className="left-side flex align-center">
-                        <Link to="/"><button className="home">{home}</button></Link>
-                        <button>{boards} <span className="desktop-boards">Boards</span> </button>
+                        {currBoard &&
+                            <Link to="/"><button className="home" onClick={()=>setBoardsMenuVis(false)}>{home}</button></Link>
+                        }
+                        {currBoard &&
+                            <button onClick={onToggleBoardsMenu}>{boards} <span className="desktop-boards">Boards</span> </button>
+                        }
+                        {isBoardsMenuVis &&
+                            <div>
+                                <BoardsMenu currBoard={currBoard} />
+
+                            </div>
+                        }
                         <input type="text" placeholder="SEARCH..." />
                     </div>
                     <div className="logo">
                         <h1>TaskForce</h1>
                     </div>
                     <div className="right-side flex align-center">
-                        <button onClick={onToggleAppHeaderMenu}>{plusSign}</button>
+                        {currBoard &&
+                            <button onClick={onToggleAppHeaderMenu}>{plusSign}</button>
+                        }
                         <button>{info}</button>
                         <button>{notifications}</button>
                         <button>account</button>

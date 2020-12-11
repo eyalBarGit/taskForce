@@ -85,7 +85,6 @@ export function CardDetails() {
 
 
     useEffect(() => {
-
         return () => {
         }
     }, [state, currCard.isWatched])
@@ -173,7 +172,6 @@ export function CardDetails() {
                             <button onClick={onToggleCardDetails}>X</button>
                         </div>
                         <RightSideMenu
-                            cardid={cardid}
                             listid={listid}
                             currBoard={currBoard}
                             currCard={currCard}

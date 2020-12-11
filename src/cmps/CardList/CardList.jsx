@@ -6,13 +6,12 @@ import { toggleCardDetails ,updateCurrList} from '../../store/actions/cardAction
 
 export function CardList(props) {
     const { cards, provided, cardIds, currListID } = props
-    const params = useParams()
-    const { id } = params
+    const { boardid } = useParams()
     const dispatch = useDispatch()
     const history = useHistory()
 
     const onToggleCardDetails = (cardid) => {
-        history.push(`/boards/${id}/${currListID}/${cardid}`)
+        history.push(`/boards/${boardid}/${currListID}/${cardid}`)
         dispatch(updateCurrList(currListID.id))
         dispatch(toggleCardDetails(true))
     }

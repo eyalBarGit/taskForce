@@ -8,11 +8,11 @@ function App() {
 
   return (
     <div className="App ">
-      <AppHeader history={History}/>
+      <AppHeader/>
 
       <Switch>
       <Route component={HomePage} exact path="/" />
-        <Route component={Board} path="/boards/:id/:listid?/:cardid?"/>
+        <Route component={Board} path="/boards/:boardid/:listid?/:cardid?"/>
       </Switch>
       {/* <Footer/> */}
     </div>

@@ -15,7 +15,9 @@ export function HomePage(props) {
 
 
     const onCreateBoard = (data) => {
-        dispatch(createBoard(data.boardTitle))
+        const title = data.boardTitle
+        if (!title) return
+        dispatch(createBoard(title))
         onToggleAddBoard()
     }
     const onToggleAddBoard = () => {
@@ -41,7 +43,7 @@ export function HomePage(props) {
             <div className="center-container margin-center">
                 <div className="flex align-center space-between">
                     <h1>CHOOSE YOUR BOARD</h1>
-                    
+
                     <div className="add-board-section flex">
                         {!isAddBoardVis &&
                             <button onClick={onToggleAddBoard} className="create-board">Create Board</button>

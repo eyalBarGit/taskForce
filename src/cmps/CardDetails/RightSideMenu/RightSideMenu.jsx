@@ -13,14 +13,16 @@ import { AddCheckList } from './AddCheckList/AddCheckList';
 import { LabelsMenu } from '../LabelsMenu/LabelsMenu';
 
 
-export function RightSideMenu({ onToggleCardDetails, cardid, onToggleCover, isCoverOn,
+export function RightSideMenu({ onToggleCardDetails, onToggleCover, isCoverOn,
     listid,
     currBoard,
     currCard,
     toggleCardVisibility,
     onToggleCardWatch
-}) {
+})
+ {
     const currList = currBoard.lists[listid]
+    const cardId = currCard.id
     const [isCopyClicked, setCopyClick] = useState(false)
     const [isMoveClicked, setMoveClick] = useState(false)
     const [isDeleteClicked, setDeleteClick] = useState(false)
@@ -61,7 +63,7 @@ export function RightSideMenu({ onToggleCardDetails, cardid, onToggleCover, isCo
     }
 
     const onDeleteCard = () => {
-        dispatch(deleteCard(currBoard, currList, cardid))
+        dispatch(deleteCard(currBoard, currList, cardId))
         onToggleCardDetails()
     }
 
@@ -173,7 +175,7 @@ export function RightSideMenu({ onToggleCardDetails, cardid, onToggleCover, isCo
                     Move
                     </button>
                 </div>
-                {isMoveClicked && <MoveCard cardid={cardid}
+                {isMoveClicked && <MoveCard cardId={cardId}
                     listid={listid}
                     currBoard={currBoard}
                     currCard={currCard}
@@ -192,7 +194,7 @@ export function RightSideMenu({ onToggleCardDetails, cardid, onToggleCover, isCo
                     Copy
                     </button>
                 </div>
-                {isCopyClicked && <CopyCard cardid={cardid}
+                {isCopyClicked && <CopyCard cardId={cardId}
                     listid={listid}
                     currBoard={currBoard}
                     currCard={currCard}
