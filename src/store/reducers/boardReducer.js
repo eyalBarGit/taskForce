@@ -782,16 +782,18 @@ export default function (state = initialState, action) {
                 ...state,
                 boards: {
                     ...state.boards,
-                    [action.data.id]: {
-                        ...state.boards[action.data.id],
-                        isFav: !state.boards[action.data.id].isFav
+                    [action.savedBoard.id]: {
+                        ...state.boards[action.savedBoard.id],
+                        isFav: !state.boards[action.savedBoard.id].isFav
                     }
                 },
-                favBoards: [...state.favBoards, action.data.id]
+                favBoards: [...state.favBoards, action.savedBoard.id]
             };
 
         case 'REMOVE_SAVED_BOARD':
-            delete state.favBoards[action.boardToRemove.id]
+            const index = state.favBoards.findIndex((boardId) => boardId === action.boardToRemove.id)
+            state.favBoards.splice(index, 1)
+            const newFavBoards = state.favBoards
             return {
                 ...state,
                 boards: {
@@ -801,7 +803,7 @@ export default function (state = initialState, action) {
                         isFav: !state.boards[action.boardToRemove.id].isFav
                     }
                 },
-                favBoards: { ...state.favBoards }
+                favBoards: newFavBoards
             }
 
 

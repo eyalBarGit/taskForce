@@ -253,10 +253,10 @@ function _toggleBgSide() {
         type: 'TOGGLE_BG_SIDE',
     }
 }
-function _favoriteBoard(data) {
+function _favoriteBoard(savedBoard) {
     return {
         type: 'TOGGLE_FAV_BOARD',
-        data
+        savedBoard
     }
 }
 function _removeSavedBoard(boardToRemove) {

@@ -59,7 +59,7 @@ export function BoardList(props) {
                 <div className="fav-boards-container flex wrap">
                     {favBoards && favBoards.map(board => {
                         const currBoard = boards[board]
-                        return <div className="container margin-center " key={board.id}>
+                        return <div className="container margin-center " key={board}>
                             <div className="boards flex ">
                                 <Link to={`boards/${board}`}>
                                     <img
