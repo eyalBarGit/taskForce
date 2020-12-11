@@ -32,7 +32,6 @@ export function HomePage(props) {
         dispatch(setActiveBoard(''))
 
         return () => {
-            // componnent willUnmount
         }
     }, [dispatch])
 

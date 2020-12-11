@@ -57,14 +57,15 @@ export function BoardList(props) {
             <div className="fav-boards ">
                 <h2>Favorite Boards</h2>
                 <div className="fav-boards-container flex wrap">
-                    {Object.values(favBoards).map(board => {
+                    {favBoards && favBoards.map(board => {
+                        const currBoard = boards[board]
                         return <div className="container margin-center " key={board.id}>
                             <div className="boards flex ">
-                                <Link to={`boards/${board.id}`}>
+                                <Link to={`boards/${board}`}>
                                     <img
                                         alt="boards"
-                                        src={require(`../../assets/images/bgs/${board.backgroundImg}.jpg`)}></img>
-                                    <p>{board.name}</p>
+                                        src={require(`../../assets/images/bgs/${currBoard.backgroundImg}.jpg`)}></img>
+                                    <p>{currBoard.name}</p>
                                 </Link>
                             </div>
                         </div>

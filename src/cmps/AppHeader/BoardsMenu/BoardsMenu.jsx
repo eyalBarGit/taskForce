@@ -2,7 +2,6 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom'
-import { icon } from '../../../assets/images/vicon-80x80.png'
 import { faCheck } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
@@ -21,6 +20,7 @@ export function BoardsMenu({ currBoard }) {
                     const currBoard = state.boards[board];
                     return <Link key={board} to={`/boards/${board}`} >
                         <div className="board-name flex">
+                            <img style={{ width: '30px' }} src={require(`../../../assets/images/bgs/${currBoard.backgroundImg}.jpg`)} alt="board-background" />
                             <p key={board}>{currBoard.name}</p>
                             {boardid === currBoard.id ? <span className="check">{check}</span> : ''}
                         </div>

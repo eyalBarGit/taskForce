@@ -238,7 +238,7 @@ if (!initialState)
 
             },
         },
-        favBoards: {},
+        favBoards: [],
         activeBoard: '',
         isCardDetailShown: false,
         isBgSideOpen: false
@@ -787,10 +787,7 @@ export default function (state = initialState, action) {
                         isFav: !state.boards[action.data.id].isFav
                     }
                 },
-                favBoards: {
-                    ...state.favBoards,
-                    [action.data.id]: action.data
-                }
+                favBoards: [...state.favBoards, action.data.id]
             };
 
         case 'REMOVE_SAVED_BOARD':
