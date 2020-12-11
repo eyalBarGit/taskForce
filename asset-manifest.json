@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/taskforce/static/css/main.b7b7eb21.chunk.css",
-    "main.js": "/taskforce/static/js/main.40263cce.chunk.js",
-    "main.js.map": "/taskforce/static/js/main.40263cce.chunk.js.map",
+    "main.css": "/taskforce/static/css/main.92971648.chunk.css",
+    "main.js": "/taskforce/static/js/main.70287d1e.chunk.js",
+    "main.js.map": "/taskforce/static/js/main.70287d1e.chunk.js.map",
     "runtime-main.js": "/taskforce/static/js/runtime-main.95470a51.js",
     "runtime-main.js.map": "/taskforce/static/js/runtime-main.95470a51.js.map",
     "static/css/2.8dbe6964.chunk.css": "/taskforce/static/css/2.8dbe6964.chunk.css",
-    "static/js/2.06a42a2c.chunk.js": "/taskforce/static/js/2.06a42a2c.chunk.js",
-    "static/js/2.06a42a2c.chunk.js.map": "/taskforce/static/js/2.06a42a2c.chunk.js.map",
+    "static/js/2.9733cc91.chunk.js": "/taskforce/static/js/2.9733cc91.chunk.js",
+    "static/js/2.9733cc91.chunk.js.map": "/taskforce/static/js/2.9733cc91.chunk.js.map",
     "index.html": "/taskforce/index.html",
-    "precache-manifest.52e481d9dc78bd86fe59ce4fbe926225.js": "/taskforce/precache-manifest.52e481d9dc78bd86fe59ce4fbe926225.js",
+    "precache-manifest.ee76be01e57a47e228e83091ec303d64.js": "/taskforce/precache-manifest.ee76be01e57a47e228e83091ec303d64.js",
     "service-worker.js": "/taskforce/service-worker.js",
     "static/css/2.8dbe6964.chunk.css.map": "/taskforce/static/css/2.8dbe6964.chunk.css.map",
-    "static/css/main.b7b7eb21.chunk.css.map": "/taskforce/static/css/main.b7b7eb21.chunk.css.map",
-    "static/js/2.06a42a2c.chunk.js.LICENSE.txt": "/taskforce/static/js/2.06a42a2c.chunk.js.LICENSE.txt",
+    "static/css/main.92971648.chunk.css.map": "/taskforce/static/css/main.92971648.chunk.css.map",
+    "static/js/2.9733cc91.chunk.js.LICENSE.txt": "/taskforce/static/js/2.9733cc91.chunk.js.LICENSE.txt",
     "static/media/boraBora.jpg": "/taskforce/static/media/boraBora.989f4a87.jpg",
     "static/media/lake.jpg": "/taskforce/static/media/lake.c140c866.jpg",
     "static/media/mountains.jpg": "/taskforce/static/media/mountains.736266ce.jpg",
@@ -25,8 +25,8 @@
   "entrypoints": [
     "static/js/runtime-main.95470a51.js",
     "static/css/2.8dbe6964.chunk.css",
-    "static/js/2.06a42a2c.chunk.js",
-    "static/css/main.b7b7eb21.chunk.css",
-    "static/js/main.40263cce.chunk.js"
+    "static/js/2.9733cc91.chunk.js",
+    "static/css/main.92971648.chunk.css",
+    "static/js/main.70287d1e.chunk.js"
   ]
 }
