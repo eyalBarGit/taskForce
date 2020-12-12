@@ -87,7 +87,7 @@ export function AppHeader(props) {
                         }
                         {isBoardsMenuVis &&
                             <div>
-                                <BoardsMenu currBoard={currBoard} />
+                                <BoardsMenu closeBoard={() => setBoardsMenuVis(false)} currBoard={currBoard} />
 
                             </div>
                         }
