@@ -80,7 +80,7 @@ export function AppHeader(props) {
                 <div className="nav-tools flex space-between align-center">
                     <div className="left-side flex align-center">
                         {currBoard &&
-                            <Link to="/"><button className="home" onClick={()=>setBoardsMenuVis(false)}>{home}</button></Link>
+                            <Link to="/"><button className="home" onClick={() => setBoardsMenuVis(false)}>{home}</button></Link>
                         }
                         {currBoard &&
                             <button onClick={onToggleBoardsMenu}>{boards} <span className="desktop-boards">Boards</span> </button>
@@ -118,7 +118,11 @@ export function AppHeader(props) {
                         <p className="save-notification">saved!</p>
                     }
                     {isHeaderMenuVisible &&
-                        <AppHeaderMenu onRemoveSavedBoard={removeSavedBoard} currBoard={currBoard} activeBoard={activeBoard} onToggleAppHeaderMenu={onToggleAppHeaderMenu} />
+                        <AppHeaderMenu
+                            onRemoveSavedBoard={removeSavedBoard}
+                            currBoard={currBoard}
+                            activeBoard={activeBoard}
+                            onToggleAppHeaderMenu={onToggleAppHeaderMenu} />
                     }
                 </div>
             }

@@ -1,15 +1,16 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState} from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { moveList, deleteList } from '../../../store/actions/listActions'
+import { useParams } from 'react-router-dom'
 
 
 export function MoveList({ onToggleMoveList, currBoard, currList }) {
     const state = useSelector(state => state.mainStore)
     const boards = Object.values(state.boards)
-    const { activeBoard } = state
+    const [moveToBoard, setMoveTo] = useState('')
     const dispatch = useDispatch()
+    const { boardid } = useParams();
 
-    const [moveTo, setMoveTo] = useState('')
 
 
     const onMoveList = ({ target }) => {
@@ -18,18 +19,10 @@ export function MoveList({ onToggleMoveList, currBoard, currList }) {
     }
 
     const MoveList = () => {
-
-        if (activeBoard === moveTo || !moveTo) return
-
-        dispatch(moveList(currBoard, currList, moveTo))
+        if (boardid === moveToBoard || !moveToBoard) return
+        dispatch(moveList(currBoard, currList, moveToBoard))
         dispatch(deleteList(currBoard, currList))
     }
-
-    useEffect(() => {
-        return () => {
-            // componnent willUnmount
-        }
-    }, [])
 
 
 
@@ -44,7 +37,6 @@ export function MoveList({ onToggleMoveList, currBoard, currList }) {
                     }
                 </select>
                 <div className="flex space-between">
-
                     <button onClick={MoveList}>Move</button>
                     <button onClick={onToggleMoveList}>X</button>
                 </div>

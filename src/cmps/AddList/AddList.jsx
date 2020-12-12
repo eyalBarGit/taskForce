@@ -3,10 +3,11 @@ import { useForm } from "react-hook-form";
 import { createList } from '../../store/actions/boardActions'
 
 import { useDispatch } from 'react-redux';
+import { ActionForm } from '../ActionForm/ActionForm';
 
-export function AddList({ currBoard, onToggleAddList, windowWidth }) {
+export function AddList({ currBoard, onToggleAddList }) {
     const dispatch = useDispatch()
-    const { register, handleSubmit, reset } = useForm();
+    const { reset } = useForm();
     const listName = useRef(null);
 
 
@@ -26,26 +27,15 @@ export function AddList({ currBoard, onToggleAddList, windowWidth }) {
     }, [])
 
 
-
     return (
         <div className="add-list ">
-            <form onSubmit={handleSubmit(onCreateList)}>
-                <div className="flex column">
-                    <input rows='1' name="listName" type="text"
-                        ref={(e) => {
-                            register(e)
-                            listName.current = e
-                        }} placeholder={'Enter list title'}
-                        autoComplete="off"
-                    />
-                    <div className="btns-section flex space-between">
+            <ActionForm
+                name={"listName"}
+                currRef={listName}
+                toggleAdd={onToggleAddList}
+                placeholder={'Enter list title'}
+                onSubmitFunc={onCreateList} />
 
-                        <button className="add-btn" >Add List</button>
-                        <button onClick={onToggleAddList} >X</button>
-                    </div>
-
-                </div>
-            </form>
         </div>
     )
 }

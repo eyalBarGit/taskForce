@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { useDispatch } from 'react-redux';
 import { createList } from '../../../store/actions/headerActions'
 import { createBoard, changeBoardName, deleteBoard } from '../../../store/actions/boardActions';
@@ -13,10 +13,10 @@ export function AppHeaderMenu({ onRemoveSavedBoard, activeBoard, onToggleAppHead
     const [isChangeNameVis, setChangeName] = useState(false)
     const [isAddListVisible, setAddListVisibility] = useState(false)
     const [isDeleteVerify, setDeleteVerify] = useState(false)
-
     const onToggleAddList = () => {
         setAddListVisibility(!isAddListVisible)
     }
+    const currRef = useRef(null);
 
     const onAddList = ({ listName }) => {
         dispatch(createList(activeBoard, listName))
@@ -46,7 +46,7 @@ export function AppHeaderMenu({ onRemoveSavedBoard, activeBoard, onToggleAppHead
 
     const onDeleteBoard = () => {
         if (currBoard.isFav) {
-            dispatch( onRemoveSavedBoard(currBoard))
+            dispatch(onRemoveSavedBoard(currBoard))
         }
         onToggleAppHeaderMenu()
         dispatch(deleteBoard(currBoard))
@@ -81,14 +81,14 @@ export function AppHeaderMenu({ onRemoveSavedBoard, activeBoard, onToggleAppHead
 
                     {isChangeNameVis &&
                         <ActionForm name="boardName" placeholder={'Add Board Title'}
-                            toggleAdd={onToggleBoardName} onSubmitFunc={onChangeBoardName} />
+                            toggleAdd={onToggleBoardName} onSubmitFunc={onChangeBoardName} currRef={currRef}/>
                     }
                     {!isAddBoardVis &&
                         <p onClick={onToggleAddBoard}>Create Board...</p>
                     }
                     {isAddBoardVis &&
                         <ActionForm name="boardTitle" placeholder={'Add Board Title'}
-                            toggleAdd={onToggleAddBoard} onSubmitFunc={onCreateBoard} />
+                            toggleAdd={onToggleAddBoard} onSubmitFunc={onCreateBoard} currRef={currRef} />
                     }
                     {!isDeleteVerify &&
                         <p onClick={onToggleDleteBoard}>Delete Board...</p>
@@ -102,7 +102,7 @@ export function AppHeaderMenu({ onRemoveSavedBoard, activeBoard, onToggleAppHead
                     }
                     {isAddListVisible &&
                         <ActionForm name="listName" placeholder={'Add list Title'}
-                            toggleAdd={onToggleAddList} onSubmitFunc={onAddList} />
+                            currRef={currRef} toggleAdd={onToggleAddList} onSubmitFunc={onAddList} />
                     }
                 </div>
             </div>

@@ -14,9 +14,8 @@ import { CardLabel } from './CardLabel/CardLabel';
 
 export function CardDetails() {
     const state = useSelector(state => state.mainStore)
-    const { activeBoard } = state
-    const { cardid, listid } = useParams();
-    const currBoard = state.boards[activeBoard]
+    const {boardid, cardid, listid } = useParams();
+    const currBoard = state.boards[boardid]
     const currCard = currBoard.cards[cardid]
     const [isCoverOn, setCoverOn] = useState(false)
     const [istCoverVisibile, setCoverVisibility] = useState(false)
@@ -37,7 +36,7 @@ export function CardDetails() {
 
     const onToggleCardDetails = () => {
         dispatch(toggleCardDetails(false))
-        history.push(`/boards/${activeBoard}`)
+        history.push(`/boards/${boardid}`)
     }
 
 
