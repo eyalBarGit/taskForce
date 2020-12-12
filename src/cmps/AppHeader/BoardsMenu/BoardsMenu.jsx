@@ -21,7 +21,7 @@ export function BoardsMenu({ currBoard, closeBoard }) {
                     {boards.map(board => {
                         const currBoard = state.boards[board];
                         return <Link key={board} to={`/boards/${board}`} >
-                            <div className="board-name flex">
+                            <div onClick={closeBoard} className="board-name flex">
                                 <img style={{ width: '30px' }} src={require(`../../../assets/images/bgs/${currBoard.backgroundImg}.jpg`)} alt="board-background" />
                                 <p key={board}>{currBoard.name}</p>
                                 {boardid === currBoard.id ? <span className="check">{check}</span> : ''}
