@@ -14,8 +14,8 @@ if (!initialState)
                 cards: {
                     'card-1': {
                         id: 'card-1',
-                        title: 'card-title-1',
-                        desc: 'card-desc-1',
+                        title: 'Go to the groceries store',
+                        desc: 'Click here to change the description',
                         isWatched: true,
                         dueDate: "Sun Dec 27 2020",
                         checklist: {
@@ -40,12 +40,12 @@ if (!initialState)
                             }
                         },
                         cardCover: "#4ae06d",
-                        labels:  ["#e04a4a", "#4ae06d", "#ab4ae0", "#f9af4d", "#3874ed", "#ffff51"]
+                        labels: ["#e04a4a",]
                     },
                     'card-2': {
                         id: 'card-2',
-                        title: 'card-title-1',
-                        desc: 'card-desc-1',
+                        title: 'Watch the kids',
+                        desc: 'Click here to change the description',
                         isWatched: true,
                         dueDate: "Sun Dec 27 2020",
                         checklist: {
@@ -69,13 +69,13 @@ if (!initialState)
                                 }
                             }
                         },
-                        cardCover: "#ab4ae0",
-                        labels:  ["#e04a4a", "#4ae06d", "#ab4ae0", "#f9af4d", "#3874ed", "#ffff51"]
+                        cardCover: "#3874ed",
+                        labels: ["#e04a4a", "#f9af4d", "#3874ed", "#ffff51"]
                     },
                     'card-3': {
                         id: 'card-3',
-                        title: 'card-title-1',
-                        desc: 'card-desc-1',
+                        title: 'Get new keyboard',
+                        desc: 'Buy on Micorosoft keyboard!',
                         isWatched: true,
                         dueDate: "Sun Dec 27 2020",
                         checklist: {
@@ -100,12 +100,12 @@ if (!initialState)
                             }
                         },
                         cardCover: "#ab4ae0",
-                        labels:  ["#e04a4a", "#4ae06d", "#ab4ae0", "#f9af4d", "#3874ed", "#ffff51"]
+                        labels: ["#4ae06d",]
                     },
                     'card-4': {
                         id: 'card-4',
-                        title: 'card-title-1',
-                        desc: 'card-desc-1',
+                        title: 'Get new shirt',
+                        desc: 'Click here to change the description',
                         isWatched: true,
                         dueDate: "Sun Dec 27 2020",
                         checklist: {
@@ -129,13 +129,13 @@ if (!initialState)
                                 }
                             }
                         },
-                        cardCover: "#ab4ae0",
-                        labels:  ["#e04a4a", "#4ae06d", "#ab4ae0", "#f9af4d", "#3874ed", "#ffff51"]
+                        cardCover: "#f9af4d",
+                        labels: ["#ab4ae0",]
                     },
                     'card-5': {
                         id: 'card-5',
-                        title: 'card-title-1',
-                        desc: 'card-desc-1',
+                        title: 'Finish house chors',
+                        desc: 'Click here to change the description',
                         isWatched: true,
                         dueDate: "Sun Dec 27 2020",
                         checklist: {
@@ -144,10 +144,10 @@ if (!initialState)
                                 name: 'checklist-1',
                                 list: {
                                     'firstOne': {
-                                        id: 'firstOne', text: 'firstOne', isChecked: false
+                                        id: 'firstOne', text: 'Clean the windows', isChecked: false
                                     },
                                     'secondOne': {
-                                        id: 'secondOne', text: 'secondOne', isChecked: true
+                                        id: 'secondOne', text: 'Vaccum clean', isChecked: true
                                     }
                                 }
                             },
@@ -159,13 +159,13 @@ if (!initialState)
                                 }
                             }
                         },
-                        cardCover: "#ab4ae0",
-                        labels:  ["#e04a4a", "#4ae06d", "#ab4ae0", "#f9af4d", "#3874ed", "#ffff51"]
+                        cardCover: "#ffff51",
+                        labels: ["#3874ed",]
                     },
                     'card-6': {
                         id: 'card-6',
-                        title: 'card-title-1',
-                        desc: 'card-desc-1',
+                        title: 'Finish adding demo data',
+                        desc: 'Add demo data to all cards',
                         isWatched: true,
                         dueDate: "Sun Dec 27 2020",
                         checklist: {
@@ -174,10 +174,10 @@ if (!initialState)
                                 name: 'checklist-1',
                                 list: {
                                     'firstOne': {
-                                        id: 'firstOne', text: 'firstOne', isChecked: false
+                                        id: 'firstOne', text: 'this is demo checklist item', isChecked: false
                                     },
                                     'secondOne': {
-                                        id: 'secondOne', text: 'secondOne', isChecked: true
+                                        id: 'secondOne', text: 'this is another demo checklist item', isChecked: true
                                     }
                                 }
                             },
@@ -185,17 +185,18 @@ if (!initialState)
                                 id: 'check-2',
                                 name: 'checklist-2',
                                 list: {
-                                    'firstOne': { id: 'firstOne', text: 'firstOne' }, 'secondOne': { id: 'secondOne', text: 'secondOne' }
+                                    'firstOne': { id: 'firstOne', text: 'firstOne' },
+                                    'secondOne': { id: 'secondOne', text: 'secondOne' }
                                 }
                             }
                         },
-                        cardCover: "#ab4ae0",
-                        labels:  ["#e04a4a", "#4ae06d", "#ab4ae0", "#f9af4d", "#3874ed", "#ffff51"]
+                        cardCover: "#f9af4d",
+                        labels: ["#e04a4a",]
                     },
                     'card-7': {
                         id: 'card-7',
-                        title: 'card-title-1',
-                        desc: 'card-desc-1',
+                        title: 'Demo card',
+                        desc: 'Click to change description',
                         isWatched: true,
                         dueDate: "Sun Dec 27 2020",
                         checklist: {
@@ -203,11 +204,11 @@ if (!initialState)
                                 id: 'check-1',
                                 name: 'checklist-1',
                                 list: {
-                                    'firstOne': {
-                                        id: 'firstOne', text: 'firstOne', isChecked: false
+                                    'first checklist': {
+                                        id: 'firstOne', text: 'demo-item', isChecked: false
                                     },
-                                    'secondOne': {
-                                        id: 'secondOne', text: 'secondOne', isChecked: true
+                                    'second checklsit': {
+                                        id: 'secondOne', text: 'second demo-item', isChecked: true
                                     }
                                 }
                             },
@@ -219,13 +220,13 @@ if (!initialState)
                                 }
                             }
                         },
-                        cardCover: "#ab4ae0",
-                        labels:  ["#e04a4a", "#4ae06d", "#ab4ae0", "#f9af4d", "#3874ed", "#ffff51"]
+                        cardCover: "#4ae06d",
+                        labels: ["#4ae06d",]
                     },
                     'card-8': {
                         id: 'card-8',
-                        title: 'card-title-1',
-                        desc: 'card-desc-1',
+                        title: 'Get the kids from school',
+                        desc: 'Click here to change card description',
                         isWatched: true,
                         dueDate: "Sun Dec 27 2020",
                         checklist: {
@@ -249,13 +250,13 @@ if (!initialState)
                                 }
                             }
                         },
-                        cardCover: "#ab4ae0",
-                        labels:  ["#e04a4a", "#4ae06d", "#ab4ae0", "#f9af4d", "#3874ed", "#ffff51"]
+                        cardCover: "#f9af4d",
+                        labels: ["#ab4ae0",]
                     },
                     'card-9': {
                         id: 'card-9',
-                        title: 'card-title-1',
-                        desc: 'card-desc-1',
+                        title: 'Learn JWT',
+                        desc: 'Click here to change card description',
                         isWatched: true,
                         dueDate: "Sun Dec 27 2020",
                         checklist: {
@@ -279,13 +280,13 @@ if (!initialState)
                                 }
                             }
                         },
-                        cardCover: "#ab4ae0",
-                        labels:  ["#e04a4a", "#4ae06d", "#ab4ae0", "#f9af4d", "#3874ed", "#ffff51"]
+                        cardCover: "#4ae06d",
+                        labels: ["#ffff51"]
                     },
                     'card-10': {
                         id: 'card-10',
-                        title: 'card-title-1',
-                        desc: 'card-desc-1',
+                        title: 'New demo card',
+                        desc: 'Click here to change card description',
                         isWatched: true,
                         dueDate: "Sun Dec 27 2020",
                         checklist: {
@@ -309,13 +310,13 @@ if (!initialState)
                                 }
                             }
                         },
-                        cardCover: "#ab4ae0",
-                        labels:  ["#e04a4a", "#4ae06d", "#ab4ae0", "#f9af4d", "#3874ed", "#ffff51"]
+                        cardCover: "#3874ed",
+                        labels: ["#ffff51"]
                     },
                     'card-11': {
                         id: 'card-11',
-                        title: 'card-title-1',
-                        desc: 'card-desc-1',
+                        title: 'Get food for the cats',
+                        desc: 'Click here to change card description',
                         isWatched: true,
                         dueDate: "Sun Dec 27 2020",
                         checklist: {
@@ -339,13 +340,13 @@ if (!initialState)
                                 }
                             }
                         },
-                        cardCover: "#ab4ae0",
-                        labels:  ["#e04a4a", "#4ae06d", "#ab4ae0", "#f9af4d", "#3874ed", "#ffff51"]
+                        cardCover: "#e04a4a",
+                        labels: ["#3874ed",]
                     },
                     'card-12': {
                         id: 'card-12',
-                        title: 'card-title-1',
-                        desc: 'card-desc-1',
+                        title: 'Get food for the dogs',
+                        desc: 'Click here to change card description',
                         isWatched: true,
                         dueDate: "Sun Dec 27 2020",
                         checklist: {
@@ -370,7 +371,7 @@ if (!initialState)
                             }
                         },
                         cardCover: "#ab4ae0",
-                        labels:  ["#e04a4a", "#4ae06d", "#ab4ae0", "#f9af4d", "#3874ed", "#ffff51"]
+                        labels: ["#e04a4a", "#4ae06d", "#ab4ae0", "#f9af4d", "#3874ed", "#ffff51"]
                     },
                 },
                 lists: {
@@ -427,7 +428,7 @@ if (!initialState)
                             }
                         },
                         cardCover: "#ab4ae0",
-                        labels:  ["#e04a4a", "#4ae06d", "#ab4ae0", "#f9af4d", "#3874ed", "#ffff51"]
+                        labels: ["#e04a4a", "#4ae06d", "#ab4ae0", "#f9af4d", "#3874ed", "#ffff51"]
                     },
                     'card-26': {
                         id: 'card-26',
@@ -457,7 +458,7 @@ if (!initialState)
                             }
                         },
                         cardCover: "#ab4ae0",
-                        labels:  ["#e04a4a", "#4ae06d", "#ab4ae0", "#f9af4d", "#3874ed", "#ffff51"]
+                        labels: ["#e04a4a", "#4ae06d", "#ab4ae0", "#f9af4d", "#3874ed", "#ffff51"]
                     },
                     'card-36': {
                         id: 'card-36',
@@ -487,7 +488,7 @@ if (!initialState)
                             }
                         },
                         cardCover: "#ab4ae0",
-                        labels:  ["#e04a4a", "#4ae06d", "#ab4ae0", "#f9af4d", "#3874ed", "#ffff51"]
+                        labels: ["#e04a4a", "#4ae06d", "#ab4ae0", "#f9af4d", "#3874ed", "#ffff51"]
                     },
                     'card-46': {
                         id: 'card-46',
@@ -517,7 +518,7 @@ if (!initialState)
                             }
                         },
                         cardCover: "#ab4ae0",
-                        labels:  ["#e04a4a", "#4ae06d", "#ab4ae0", "#f9af4d", "#3874ed", "#ffff51"]
+                        labels: ["#e04a4a", "#4ae06d", "#ab4ae0", "#f9af4d", "#3874ed", "#ffff51"]
                     },
                     'card-57': {
                         id: 'card-57',
@@ -547,7 +548,7 @@ if (!initialState)
                             }
                         },
                         cardCover: "#ab4ae0",
-                        labels:  ["#e04a4a", "#4ae06d", "#ab4ae0", "#f9af4d", "#3874ed", "#ffff51"]
+                        labels: ["#e04a4a", "#4ae06d", "#ab4ae0", "#f9af4d", "#3874ed", "#ffff51"]
                     },
                     'card-67': {
                         id: 'card-67',
@@ -577,7 +578,7 @@ if (!initialState)
                             }
                         },
                         cardCover: "#ab4ae0",
-                        labels:  ["#e04a4a", "#4ae06d", "#ab4ae0", "#f9af4d", "#3874ed", "#ffff51"]
+                        labels: ["#e04a4a", "#4ae06d", "#ab4ae0", "#f9af4d", "#3874ed", "#ffff51"]
                     },
                     'card-77': {
                         id: 'card-77',
@@ -607,7 +608,7 @@ if (!initialState)
                             }
                         },
                         cardCover: "#ab4ae0",
-                        labels:  ["#e04a4a", "#4ae06d", "#ab4ae0", "#f9af4d", "#3874ed", "#ffff51"]
+                        labels: ["#e04a4a", "#4ae06d", "#ab4ae0", "#f9af4d", "#3874ed", "#ffff51"]
                     },
                     'card-87': {
                         id: 'card-87',
@@ -637,7 +638,7 @@ if (!initialState)
                             }
                         },
                         cardCover: "#ab4ae0",
-                        labels:  ["#e04a4a", "#4ae06d", "#ab4ae0", "#f9af4d", "#3874ed", "#ffff51"]
+                        labels: ["#e04a4a", "#4ae06d", "#ab4ae0", "#f9af4d", "#3874ed", "#ffff51"]
                     },
                 },
                 lists: {
