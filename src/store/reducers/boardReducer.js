@@ -16,6 +16,38 @@ if (!initialState)
                         id: 'card-1',
                         title: 'card-title-1',
                         desc: 'card-desc-1',
+                        isWatched: true,
+                        dueDate: "Sun Dec 27 2020",
+                        checklist: {
+                            'check-1': {
+                                id: 'check-1',
+                                name: 'checklist-1',
+                                list: {
+                                    'firstOne': {
+                                        id: 'firstOne', text: 'toDo-chelcklist', isChecked: false
+                                    },
+                                    'secondOne': {
+                                        id: 'secondOne', text: 'Do-Not-Forget', isChecked: true
+                                    }
+                                }
+                            },
+                            'check-2': {
+                                id: 'check-2',
+                                name: 'checklist-2',
+                                list: {
+                                    'firstOne': { id: 'firstOne', text: 'firstOne' }, 'secondOne': { id: 'secondOne', text: 'secondOne' }
+                                }
+                            }
+                        },
+                        cardCover: "#4ae06d",
+                        labels:  ["#e04a4a", "#4ae06d", "#ab4ae0", "#f9af4d", "#3874ed", "#ffff51"]
+                    },
+                    'card-2': {
+                        id: 'card-2',
+                        title: 'card-title-1',
+                        desc: 'card-desc-1',
+                        isWatched: true,
+                        dueDate: "Sun Dec 27 2020",
                         checklist: {
                             'check-1': {
                                 id: 'check-1',
@@ -37,96 +69,308 @@ if (!initialState)
                                 }
                             }
                         },
-                        cardCover: '',
-                        labels: []
-                    },
-                    'card-2': {
-                        id: 'card-2',
-                        title: 'card-title-2',
-                        desc: 'card-desc-2',
-                        checklist: {},
-                        cardCover: '',
-                        labels: []
+                        cardCover: "#ab4ae0",
+                        labels:  ["#e04a4a", "#4ae06d", "#ab4ae0", "#f9af4d", "#3874ed", "#ffff51"]
                     },
                     'card-3': {
                         id: 'card-3',
-                        title: 'card-title-3',
-                        desc: 'card-desc-3',
-                        checklist: {},
-                        cardCover: '',
-                        labels: []
+                        title: 'card-title-1',
+                        desc: 'card-desc-1',
+                        isWatched: true,
+                        dueDate: "Sun Dec 27 2020",
+                        checklist: {
+                            'check-1': {
+                                id: 'check-1',
+                                name: 'checklist-1',
+                                list: {
+                                    'firstOne': {
+                                        id: 'firstOne', text: 'firstOne', isChecked: false
+                                    },
+                                    'secondOne': {
+                                        id: 'secondOne', text: 'secondOne', isChecked: true
+                                    }
+                                }
+                            },
+                            'check-2': {
+                                id: 'check-2',
+                                name: 'checklist-2',
+                                list: {
+                                    'firstOne': { id: 'firstOne', text: 'firstOne' }, 'secondOne': { id: 'secondOne', text: 'secondOne' }
+                                }
+                            }
+                        },
+                        cardCover: "#ab4ae0",
+                        labels:  ["#e04a4a", "#4ae06d", "#ab4ae0", "#f9af4d", "#3874ed", "#ffff51"]
                     },
                     'card-4': {
                         id: 'card-4',
-                        title: 'card-title-4',
-                        desc: 'card-desc-4',
-                        checklist: {},
-                        cardCover: '',
-                        labels: []
+                        title: 'card-title-1',
+                        desc: 'card-desc-1',
+                        isWatched: true,
+                        dueDate: "Sun Dec 27 2020",
+                        checklist: {
+                            'check-1': {
+                                id: 'check-1',
+                                name: 'checklist-1',
+                                list: {
+                                    'firstOne': {
+                                        id: 'firstOne', text: 'firstOne', isChecked: false
+                                    },
+                                    'secondOne': {
+                                        id: 'secondOne', text: 'secondOne', isChecked: true
+                                    }
+                                }
+                            },
+                            'check-2': {
+                                id: 'check-2',
+                                name: 'checklist-2',
+                                list: {
+                                    'firstOne': { id: 'firstOne', text: 'firstOne' }, 'secondOne': { id: 'secondOne', text: 'secondOne' }
+                                }
+                            }
+                        },
+                        cardCover: "#ab4ae0",
+                        labels:  ["#e04a4a", "#4ae06d", "#ab4ae0", "#f9af4d", "#3874ed", "#ffff51"]
                     },
                     'card-5': {
                         id: 'card-5',
-                        title: 'card-title-5',
-                        desc: 'card-desc-5',
-                        checklist: {},
-                        cardCover: '',
-                        labels: []
+                        title: 'card-title-1',
+                        desc: 'card-desc-1',
+                        isWatched: true,
+                        dueDate: "Sun Dec 27 2020",
+                        checklist: {
+                            'check-1': {
+                                id: 'check-1',
+                                name: 'checklist-1',
+                                list: {
+                                    'firstOne': {
+                                        id: 'firstOne', text: 'firstOne', isChecked: false
+                                    },
+                                    'secondOne': {
+                                        id: 'secondOne', text: 'secondOne', isChecked: true
+                                    }
+                                }
+                            },
+                            'check-2': {
+                                id: 'check-2',
+                                name: 'checklist-2',
+                                list: {
+                                    'firstOne': { id: 'firstOne', text: 'firstOne' }, 'secondOne': { id: 'secondOne', text: 'secondOne' }
+                                }
+                            }
+                        },
+                        cardCover: "#ab4ae0",
+                        labels:  ["#e04a4a", "#4ae06d", "#ab4ae0", "#f9af4d", "#3874ed", "#ffff51"]
                     },
                     'card-6': {
                         id: 'card-6',
-                        title: 'card-title-6',
-                        desc: 'card-desc-6',
-                        checklist: {},
-                        cardCover: '',
-                        labels: []
+                        title: 'card-title-1',
+                        desc: 'card-desc-1',
+                        isWatched: true,
+                        dueDate: "Sun Dec 27 2020",
+                        checklist: {
+                            'check-1': {
+                                id: 'check-1',
+                                name: 'checklist-1',
+                                list: {
+                                    'firstOne': {
+                                        id: 'firstOne', text: 'firstOne', isChecked: false
+                                    },
+                                    'secondOne': {
+                                        id: 'secondOne', text: 'secondOne', isChecked: true
+                                    }
+                                }
+                            },
+                            'check-2': {
+                                id: 'check-2',
+                                name: 'checklist-2',
+                                list: {
+                                    'firstOne': { id: 'firstOne', text: 'firstOne' }, 'secondOne': { id: 'secondOne', text: 'secondOne' }
+                                }
+                            }
+                        },
+                        cardCover: "#ab4ae0",
+                        labels:  ["#e04a4a", "#4ae06d", "#ab4ae0", "#f9af4d", "#3874ed", "#ffff51"]
                     },
                     'card-7': {
                         id: 'card-7',
-                        title: 'card-title-7',
-                        desc: 'card-desc-7',
-                        checklist: {},
-                        cardCover: '',
-                        labels: []
+                        title: 'card-title-1',
+                        desc: 'card-desc-1',
+                        isWatched: true,
+                        dueDate: "Sun Dec 27 2020",
+                        checklist: {
+                            'check-1': {
+                                id: 'check-1',
+                                name: 'checklist-1',
+                                list: {
+                                    'firstOne': {
+                                        id: 'firstOne', text: 'firstOne', isChecked: false
+                                    },
+                                    'secondOne': {
+                                        id: 'secondOne', text: 'secondOne', isChecked: true
+                                    }
+                                }
+                            },
+                            'check-2': {
+                                id: 'check-2',
+                                name: 'checklist-2',
+                                list: {
+                                    'firstOne': { id: 'firstOne', text: 'firstOne' }, 'secondOne': { id: 'secondOne', text: 'secondOne' }
+                                }
+                            }
+                        },
+                        cardCover: "#ab4ae0",
+                        labels:  ["#e04a4a", "#4ae06d", "#ab4ae0", "#f9af4d", "#3874ed", "#ffff51"]
                     },
                     'card-8': {
                         id: 'card-8',
-                        title: 'card-title-8',
-                        desc: 'card-desc-8',
-                        checklist: {},
-                        cardCover: '',
-                        labels: []
+                        title: 'card-title-1',
+                        desc: 'card-desc-1',
+                        isWatched: true,
+                        dueDate: "Sun Dec 27 2020",
+                        checklist: {
+                            'check-1': {
+                                id: 'check-1',
+                                name: 'checklist-1',
+                                list: {
+                                    'firstOne': {
+                                        id: 'firstOne', text: 'firstOne', isChecked: false
+                                    },
+                                    'secondOne': {
+                                        id: 'secondOne', text: 'secondOne', isChecked: true
+                                    }
+                                }
+                            },
+                            'check-2': {
+                                id: 'check-2',
+                                name: 'checklist-2',
+                                list: {
+                                    'firstOne': { id: 'firstOne', text: 'firstOne' }, 'secondOne': { id: 'secondOne', text: 'secondOne' }
+                                }
+                            }
+                        },
+                        cardCover: "#ab4ae0",
+                        labels:  ["#e04a4a", "#4ae06d", "#ab4ae0", "#f9af4d", "#3874ed", "#ffff51"]
                     },
                     'card-9': {
                         id: 'card-9',
-                        title: 'card-title-9',
-                        desc: 'card-desc-9',
-                        checklist: {},
-                        cardCover: '',
-                        labels: []
+                        title: 'card-title-1',
+                        desc: 'card-desc-1',
+                        isWatched: true,
+                        dueDate: "Sun Dec 27 2020",
+                        checklist: {
+                            'check-1': {
+                                id: 'check-1',
+                                name: 'checklist-1',
+                                list: {
+                                    'firstOne': {
+                                        id: 'firstOne', text: 'firstOne', isChecked: false
+                                    },
+                                    'secondOne': {
+                                        id: 'secondOne', text: 'secondOne', isChecked: true
+                                    }
+                                }
+                            },
+                            'check-2': {
+                                id: 'check-2',
+                                name: 'checklist-2',
+                                list: {
+                                    'firstOne': { id: 'firstOne', text: 'firstOne' }, 'secondOne': { id: 'secondOne', text: 'secondOne' }
+                                }
+                            }
+                        },
+                        cardCover: "#ab4ae0",
+                        labels:  ["#e04a4a", "#4ae06d", "#ab4ae0", "#f9af4d", "#3874ed", "#ffff51"]
                     },
                     'card-10': {
                         id: 'card-10',
-                        title: 'card-title-10',
-                        desc: 'card-desc-10',
-                        checklist: {},
-                        cardCover: '',
-                        labels: []
+                        title: 'card-title-1',
+                        desc: 'card-desc-1',
+                        isWatched: true,
+                        dueDate: "Sun Dec 27 2020",
+                        checklist: {
+                            'check-1': {
+                                id: 'check-1',
+                                name: 'checklist-1',
+                                list: {
+                                    'firstOne': {
+                                        id: 'firstOne', text: 'firstOne', isChecked: false
+                                    },
+                                    'secondOne': {
+                                        id: 'secondOne', text: 'secondOne', isChecked: true
+                                    }
+                                }
+                            },
+                            'check-2': {
+                                id: 'check-2',
+                                name: 'checklist-2',
+                                list: {
+                                    'firstOne': { id: 'firstOne', text: 'firstOne' }, 'secondOne': { id: 'secondOne', text: 'secondOne' }
+                                }
+                            }
+                        },
+                        cardCover: "#ab4ae0",
+                        labels:  ["#e04a4a", "#4ae06d", "#ab4ae0", "#f9af4d", "#3874ed", "#ffff51"]
                     },
                     'card-11': {
                         id: 'card-11',
-                        title: 'card-title-11',
-                        desc: 'card-desc-11',
-                        checklist: {},
-                        cardCover: '',
-                        labels: []
+                        title: 'card-title-1',
+                        desc: 'card-desc-1',
+                        isWatched: true,
+                        dueDate: "Sun Dec 27 2020",
+                        checklist: {
+                            'check-1': {
+                                id: 'check-1',
+                                name: 'checklist-1',
+                                list: {
+                                    'firstOne': {
+                                        id: 'firstOne', text: 'firstOne', isChecked: false
+                                    },
+                                    'secondOne': {
+                                        id: 'secondOne', text: 'secondOne', isChecked: true
+                                    }
+                                }
+                            },
+                            'check-2': {
+                                id: 'check-2',
+                                name: 'checklist-2',
+                                list: {
+                                    'firstOne': { id: 'firstOne', text: 'firstOne' }, 'secondOne': { id: 'secondOne', text: 'secondOne' }
+                                }
+                            }
+                        },
+                        cardCover: "#ab4ae0",
+                        labels:  ["#e04a4a", "#4ae06d", "#ab4ae0", "#f9af4d", "#3874ed", "#ffff51"]
                     },
                     'card-12': {
                         id: 'card-12',
-                        title: 'card-title-12',
-                        desc: 'card-desc-12',
-                        checklist: {},
-                        cardCover: '',
-                        labels: []
+                        title: 'card-title-1',
+                        desc: 'card-desc-1',
+                        isWatched: true,
+                        dueDate: "Sun Dec 27 2020",
+                        checklist: {
+                            'check-1': {
+                                id: 'check-1',
+                                name: 'checklist-1',
+                                list: {
+                                    'firstOne': {
+                                        id: 'firstOne', text: 'firstOne', isChecked: false
+                                    },
+                                    'secondOne': {
+                                        id: 'secondOne', text: 'secondOne', isChecked: true
+                                    }
+                                }
+                            },
+                            'check-2': {
+                                id: 'check-2',
+                                name: 'checklist-2',
+                                list: {
+                                    'firstOne': { id: 'firstOne', text: 'firstOne' }, 'secondOne': { id: 'secondOne', text: 'secondOne' }
+                                }
+                            }
+                        },
+                        cardCover: "#ab4ae0",
+                        labels:  ["#e04a4a", "#4ae06d", "#ab4ae0", "#f9af4d", "#3874ed", "#ffff51"]
                     },
                 },
                 lists: {
@@ -157,67 +401,243 @@ if (!initialState)
                 cards: {
                     'card-16': {
                         id: 'card-16',
-                        title: 'new card-title-1',
-                        desc: 'new card-desc-1',
-                        checklist: {},
-                        cardCover: '',
-                        labels: []
+                        title: 'card-title-1',
+                        desc: 'card-desc-1',
+                        isWatched: true,
+                        dueDate: "Sun Dec 27 2020",
+                        checklist: {
+                            'check-1': {
+                                id: 'check-1',
+                                name: 'checklist-1',
+                                list: {
+                                    'firstOne': {
+                                        id: 'firstOne', text: 'firstOne', isChecked: false
+                                    },
+                                    'secondOne': {
+                                        id: 'secondOne', text: 'secondOne', isChecked: true
+                                    }
+                                }
+                            },
+                            'check-2': {
+                                id: 'check-2',
+                                name: 'checklist-2',
+                                list: {
+                                    'firstOne': { id: 'firstOne', text: 'firstOne' }, 'secondOne': { id: 'secondOne', text: 'secondOne' }
+                                }
+                            }
+                        },
+                        cardCover: "#ab4ae0",
+                        labels:  ["#e04a4a", "#4ae06d", "#ab4ae0", "#f9af4d", "#3874ed", "#ffff51"]
                     },
                     'card-26': {
                         id: 'card-26',
-                        title: 'new card-title-2',
-                        desc: 'new card-desc-2',
-                        checklist: {},
-                        cardCover: '',
-                        labels: []
+                        title: 'card-title-1',
+                        desc: 'card-desc-1',
+                        isWatched: true,
+                        dueDate: "Sun Dec 27 2020",
+                        checklist: {
+                            'check-1': {
+                                id: 'check-1',
+                                name: 'checklist-1',
+                                list: {
+                                    'firstOne': {
+                                        id: 'firstOne', text: 'firstOne', isChecked: false
+                                    },
+                                    'secondOne': {
+                                        id: 'secondOne', text: 'secondOne', isChecked: true
+                                    }
+                                }
+                            },
+                            'check-2': {
+                                id: 'check-2',
+                                name: 'checklist-2',
+                                list: {
+                                    'firstOne': { id: 'firstOne', text: 'firstOne' }, 'secondOne': { id: 'secondOne', text: 'secondOne' }
+                                }
+                            }
+                        },
+                        cardCover: "#ab4ae0",
+                        labels:  ["#e04a4a", "#4ae06d", "#ab4ae0", "#f9af4d", "#3874ed", "#ffff51"]
                     },
                     'card-36': {
                         id: 'card-36',
-                        title: 'new card-title-3',
-                        desc: 'new card-desc-3',
-                        checklist: {},
-                        cardCover: '',
-                        labels: []
+                        title: 'card-title-1',
+                        desc: 'card-desc-1',
+                        isWatched: true,
+                        dueDate: "Sun Dec 27 2020",
+                        checklist: {
+                            'check-1': {
+                                id: 'check-1',
+                                name: 'checklist-1',
+                                list: {
+                                    'firstOne': {
+                                        id: 'firstOne', text: 'firstOne', isChecked: false
+                                    },
+                                    'secondOne': {
+                                        id: 'secondOne', text: 'secondOne', isChecked: true
+                                    }
+                                }
+                            },
+                            'check-2': {
+                                id: 'check-2',
+                                name: 'checklist-2',
+                                list: {
+                                    'firstOne': { id: 'firstOne', text: 'firstOne' }, 'secondOne': { id: 'secondOne', text: 'secondOne' }
+                                }
+                            }
+                        },
+                        cardCover: "#ab4ae0",
+                        labels:  ["#e04a4a", "#4ae06d", "#ab4ae0", "#f9af4d", "#3874ed", "#ffff51"]
                     },
                     'card-46': {
                         id: 'card-46',
-                        title: 'new card-title-4',
-                        desc: 'new card-desc-4',
-                        checklist: {},
-                        cardCover: '',
-                        labels: []
+                        title: 'card-title-1',
+                        desc: 'card-desc-1',
+                        isWatched: true,
+                        dueDate: "Sun Dec 27 2020",
+                        checklist: {
+                            'check-1': {
+                                id: 'check-1',
+                                name: 'checklist-1',
+                                list: {
+                                    'firstOne': {
+                                        id: 'firstOne', text: 'firstOne', isChecked: false
+                                    },
+                                    'secondOne': {
+                                        id: 'secondOne', text: 'secondOne', isChecked: true
+                                    }
+                                }
+                            },
+                            'check-2': {
+                                id: 'check-2',
+                                name: 'checklist-2',
+                                list: {
+                                    'firstOne': { id: 'firstOne', text: 'firstOne' }, 'secondOne': { id: 'secondOne', text: 'secondOne' }
+                                }
+                            }
+                        },
+                        cardCover: "#ab4ae0",
+                        labels:  ["#e04a4a", "#4ae06d", "#ab4ae0", "#f9af4d", "#3874ed", "#ffff51"]
                     },
                     'card-57': {
                         id: 'card-57',
-                        title: 'new card-title-5',
-                        desc: 'new card-desc-5',
-                        checklist: {},
-                        cardCover: '',
-                        labels: []
+                        title: 'card-title-1',
+                        desc: 'card-desc-1',
+                        isWatched: true,
+                        dueDate: "Sun Dec 27 2020",
+                        checklist: {
+                            'check-1': {
+                                id: 'check-1',
+                                name: 'checklist-1',
+                                list: {
+                                    'firstOne': {
+                                        id: 'firstOne', text: 'firstOne', isChecked: false
+                                    },
+                                    'secondOne': {
+                                        id: 'secondOne', text: 'secondOne', isChecked: true
+                                    }
+                                }
+                            },
+                            'check-2': {
+                                id: 'check-2',
+                                name: 'checklist-2',
+                                list: {
+                                    'firstOne': { id: 'firstOne', text: 'firstOne' }, 'secondOne': { id: 'secondOne', text: 'secondOne' }
+                                }
+                            }
+                        },
+                        cardCover: "#ab4ae0",
+                        labels:  ["#e04a4a", "#4ae06d", "#ab4ae0", "#f9af4d", "#3874ed", "#ffff51"]
                     },
                     'card-67': {
                         id: 'card-67',
-                        title: 'new card-title-6',
-                        desc: 'new card-desc-6',
-                        checklist: {},
-                        cardCover: '',
-                        labels: []
+                        title: 'card-title-1',
+                        desc: 'card-desc-1',
+                        isWatched: true,
+                        dueDate: "Sun Dec 27 2020",
+                        checklist: {
+                            'check-1': {
+                                id: 'check-1',
+                                name: 'checklist-1',
+                                list: {
+                                    'firstOne': {
+                                        id: 'firstOne', text: 'firstOne', isChecked: false
+                                    },
+                                    'secondOne': {
+                                        id: 'secondOne', text: 'secondOne', isChecked: true
+                                    }
+                                }
+                            },
+                            'check-2': {
+                                id: 'check-2',
+                                name: 'checklist-2',
+                                list: {
+                                    'firstOne': { id: 'firstOne', text: 'firstOne' }, 'secondOne': { id: 'secondOne', text: 'secondOne' }
+                                }
+                            }
+                        },
+                        cardCover: "#ab4ae0",
+                        labels:  ["#e04a4a", "#4ae06d", "#ab4ae0", "#f9af4d", "#3874ed", "#ffff51"]
                     },
                     'card-77': {
                         id: 'card-77',
-                        title: 'new card-title-7',
-                        desc: 'new card-desc-7',
-                        checklist: {},
-                        cardCover: '',
-                        labels: []
+                        title: 'card-title-1',
+                        desc: 'card-desc-1',
+                        isWatched: true,
+                        dueDate: "Sun Dec 27 2020",
+                        checklist: {
+                            'check-1': {
+                                id: 'check-1',
+                                name: 'checklist-1',
+                                list: {
+                                    'firstOne': {
+                                        id: 'firstOne', text: 'firstOne', isChecked: false
+                                    },
+                                    'secondOne': {
+                                        id: 'secondOne', text: 'secondOne', isChecked: true
+                                    }
+                                }
+                            },
+                            'check-2': {
+                                id: 'check-2',
+                                name: 'checklist-2',
+                                list: {
+                                    'firstOne': { id: 'firstOne', text: 'firstOne' }, 'secondOne': { id: 'secondOne', text: 'secondOne' }
+                                }
+                            }
+                        },
+                        cardCover: "#ab4ae0",
+                        labels:  ["#e04a4a", "#4ae06d", "#ab4ae0", "#f9af4d", "#3874ed", "#ffff51"]
                     },
                     'card-87': {
                         id: 'card-87',
-                        title: 'new card-title-8',
-                        desc: 'new card-desc-8',
-                        checklist: {},
-                        cardCover: '',
-                        labels: []
+                        title: 'card-title-1',
+                        desc: 'card-desc-1',
+                        isWatched: true,
+                        dueDate: "Sun Dec 27 2020",
+                        checklist: {
+                            'check-1': {
+                                id: 'check-1',
+                                name: 'checklist-1',
+                                list: {
+                                    'firstOne': {
+                                        id: 'firstOne', text: 'firstOne', isChecked: false
+                                    },
+                                    'secondOne': {
+                                        id: 'secondOne', text: 'secondOne', isChecked: true
+                                    }
+                                }
+                            },
+                            'check-2': {
+                                id: 'check-2',
+                                name: 'checklist-2',
+                                list: {
+                                    'firstOne': { id: 'firstOne', text: 'firstOne' }, 'secondOne': { id: 'secondOne', text: 'secondOne' }
+                                }
+                            }
+                        },
+                        cardCover: "#ab4ae0",
+                        labels:  ["#e04a4a", "#4ae06d", "#ab4ae0", "#f9af4d", "#3874ed", "#ffff51"]
                     },
                 },
                 lists: {

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import { useDispatch } from 'react-redux';
 import { removeCheckList, addCheckListItem, removeCheckListItem, checkItem } from '../../../store/actions/cardActions'
 import { ProgressBar } from '../../ProgressBar/ProgressBar'
@@ -15,6 +15,7 @@ export function CardCheckList({ currCheckList, currCard, currBoard }) {
     const [currCheckItem, setCurrCheckItem] = useState()
     const [completed, setCompleted] = useState(0)
     const dispatch = useDispatch()
+    const itemName = useRef(null);
 
     const trash = <FontAwesomeIcon icon={faTrashAlt} />
     const checklist = <FontAwesomeIcon icon={faTasks} />
@@ -35,7 +36,7 @@ export function CardCheckList({ currCheckList, currCard, currBoard }) {
             newCheckedItems.splice(index, 1)
             setCheckItems([...newCheckedItems])
         },
-        [currBoard, currCard, currCheckList, dispatch,checkedItems]
+        [currBoard, currCard, currCheckList, dispatch, checkedItems]
     )
 
     const onToggleItemVisibility = () => {
@@ -109,7 +110,7 @@ export function CardCheckList({ currCheckList, currCard, currBoard }) {
             <div className="check-list-action">
                 {
                     isAddItemVisible &&
-                    <ActionForm toggleAdd={onToggleItemVisibility} onSubmitFunc={onAddCheckItem} name={'listItem'} placeholder={'Item title'} />
+                    <ActionForm currRef={itemName} toggleAdd={onToggleItemVisibility} onSubmitFunc={onAddCheckItem} name={'listItem'} placeholder={'Item title'} />
                 }
             </div>
         </div >
