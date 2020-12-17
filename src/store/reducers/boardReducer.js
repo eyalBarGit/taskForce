@@ -204,12 +204,7 @@ if (!initialState)
                                 id: 'check-1',
                                 name: 'checklist-1',
                                 list: {
-                                    'first checklist': {
-                                        id: 'firstOne', text: 'demo-item', isChecked: false
-                                    },
-                                    'second checklsit': {
-                                        id: 'secondOne', text: 'second demo-item', isChecked: true
-                                    }
+                                 
                                 }
                             },
                             'check-2': {
