@@ -4,7 +4,7 @@ export function toggleCardDetails(isCardDetailShown) {
     return async dispatch => {
         try {
             dispatch(_toggleCardDetails(isCardDetailShown));
-            // dispatch({ type: 'GET_STATE' });
+            
         }
         catch (err) {
             throw err
@@ -15,7 +15,7 @@ export function updateCurrList(listId) {
     return async dispatch => {
         try {
             dispatch(_updateCurrList(listId));
-            // dispatch({ type: 'GET_STATE' });
+            
         }
         catch (err) {
             throw err
@@ -32,7 +32,6 @@ export function changeCardTitle(currCard, cardTitle, currBoard) {
         }
         try {
             dispatch(_changeCardTitle(data));
-            // dispatch({ type: 'GET_STATE' });
         }
         catch (err) {
             throw err
@@ -47,7 +46,6 @@ export function deleteCard(currBoard, currList, cardId) {
             const updatedData = await cardService.deleteCard(currBoard, currList, cardId)
 
             dispatch(_deleteCard(updatedData));
-            // dispatch({ type: 'GET_STATE' });
         }
         catch (err) {
             throw err
@@ -55,7 +53,6 @@ export function deleteCard(currBoard, currList, cardId) {
     }
 }
 export function copyCard(currBoard, copyToList, cardToCopy) {
-    console.log('cardToCopy:', cardToCopy)
     return async dispatch => {
         try {
             const copiedCard = await cardService.copyCard(cardToCopy)
@@ -65,8 +62,6 @@ export function copyCard(currBoard, copyToList, cardToCopy) {
                 copyToListID: copyToList
             }
             dispatch(_copyCard(updatedData));
-            console.log('newCard is:', copiedCard)
-            // dispatch({ type: 'GET_STATE' });
         }
         catch (err) {
             throw err
@@ -83,7 +78,6 @@ export function moveCard(currBoard, moveToList, currCard, currList) {
                 currList: currList
             }
             dispatch(_moveCard(updatedData));
-            // dispatch({ type: 'GET_STATE' });
         }
         catch (err) {
             throw err
@@ -99,7 +93,7 @@ export function setCardDesc(currBoard, currCard, desc) {
                 desc: desc,
             }
             dispatch(_setCardDesc(data));
-            // dispatch({ type: 'GET_STATE' });
+            
         }
         catch (err) {
             throw err
@@ -124,7 +118,6 @@ export function checkItem(currBoard, currCard, currCheckList, currItem, isChecke
     }
 }
 export function setLabel(currBoard, currCard, labelColor) {
-    console.log('currCardofLabels:', currCard)
     const data = {
         currBoard: currBoard,
         currCard: currCard,
@@ -166,7 +159,7 @@ export function toggleCardWatch(currBoard, currCard, isWatched) {
                 isWatched: isWatched
             }
             dispatch(_toggleCardWatch(data));
-            // dispatch({ type: 'GET_STATE' });
+            
         }
         catch (err) {
             throw err
@@ -184,7 +177,7 @@ export function createCheckList(currBoard, currCard, checklistName) {
                 currCard: currCard,
             }
             dispatch(_addChecklist(data));
-            // dispatch({ type: 'GET_STATE' });
+            
         }
         catch (err) {
             throw err
@@ -202,7 +195,7 @@ export function addCheckListItem(currBoard, currCard, currCheckList, itemName) {
                 newItem: currItem
             }
             dispatch(_addCheckListItem(data));
-            // dispatch({ type: 'GET_STATE' });
+            
         }
         catch (err) {
             throw err
@@ -219,7 +212,7 @@ export function removeCheckListItem(currBoard, currCard, currCheckList, itemToRe
                 itemToRemove: itemToRemove
             }
             dispatch(_removeCheckListItem(data));
-            // dispatch({ type: 'GET_STATE' });
+            
         }
         catch (err) {
             throw err
@@ -235,7 +228,7 @@ export function removeCheckList(currBoard, currCard, checkListToRemove) {
                 currCard: currCard,
             }
             dispatch(_removeCheckList(data));
-            // dispatch({ type: 'GET_STATE' });
+            
         }
         catch (err) {
             throw err
@@ -253,7 +246,7 @@ export function setCardCover(currBoard, currCard, color) {
                 color: color,
             }
             dispatch(_setCardCover(data));
-            // dispatch({ type: 'GET_STATE' });
+            
         }
         catch (err) {
             throw err
@@ -270,7 +263,7 @@ export function setDueDate(currBoard, currCard, dueDate) {
                 dueDate: dueDate,
             }
             dispatch(_setDueDate(data));
-            // dispatch({ type: 'GET_STATE' });
+            
         }
         catch (err) {
             throw err

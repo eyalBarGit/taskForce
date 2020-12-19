@@ -67,9 +67,7 @@ export function TaskDetails(props) {
   }
   return (
     <TaskDetailsContainer className="margin-center"
-      background={store.themeColor}
-
-    >
+      background={store.themeColor}>
       {task &&
         <div className="task-details ">
           <MainContainer

@@ -4,7 +4,6 @@ var initialState = UTILS.loadFromStorage('mainStore')
 
 if (!initialState)
 
-
     initialState = {
         boards: {
             'board-1': {
@@ -845,7 +844,6 @@ export default function (state = initialState, action) {
                 activeBoard: action.activeBoard.id
             };
         case 'CREATE_CARD':
-            console.log('created')
             return {
                 ...state,
                 boards: {

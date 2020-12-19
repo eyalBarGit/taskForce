@@ -14,7 +14,7 @@ import { CardLabel } from './CardLabel/CardLabel';
 
 export function CardDetails() {
     const state = useSelector(state => state.mainStore)
-    const {boardid, cardid, listid } = useParams();
+    const { boardid, cardid, listid } = useParams();
     const currBoard = state.boards[boardid]
     const currCard = currBoard.cards[cardid]
     const [isCoverOn, setCoverOn] = useState(false)
@@ -84,11 +84,12 @@ export function CardDetails() {
 
 
     useEffect(() => {
-        return () => {
-        }
-    }, [state, currCard.isWatched])
+
+    }, [state, currCard.isWatched,])
 
 
+
+ 
 
     return (
         <div className="card-details" >

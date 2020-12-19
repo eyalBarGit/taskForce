@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useRef } from 'react';
 import { useDispatch } from 'react-redux';
 import { createList } from '../../../store/actions/headerActions'
 import { createBoard, changeBoardName, deleteBoard } from '../../../store/actions/boardActions';
@@ -57,14 +57,6 @@ export function AppHeaderMenu({ onRemoveSavedBoard, activeBoard, onToggleAppHead
     const onToggleDleteBoard = () => {
         setDeleteVerify(!isDeleteVerify)
     }
-
-
-    useEffect(() => {
-        return () => {
-            // componnent willUnmount
-        }
-    }, [])
-
 
 
     return (

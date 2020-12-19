@@ -28,6 +28,7 @@ export function CardCheckList({ currCheckList, currCard, currBoard }) {
 
 
     const onRemoveCheckList = () => { dispatch(removeCheckList(currBoard, currCard, currCheckList)) }
+
     const onRemoveCheckListItem = useCallback(
         (item) => {
             const index = checkedItems.findIndex((checkedItem) => checkedItem.id === item.id)
@@ -75,9 +76,6 @@ export function CardCheckList({ currCheckList, currCard, currBoard }) {
 
     useEffect(() => {
         calculatePercentage()
-        return () => {
-            // componnent willUnmount
-        }
     }, [calculatePercentage, currCheckItem, currCheckList])
 
 

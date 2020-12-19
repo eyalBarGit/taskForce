@@ -1,19 +1,7 @@
-import React, { useEffect } from 'react';
-// import { useDispatch, useSelector } from 'react-redux';
+import React from 'react';
 import { AddDescription } from '.././Description/AddDescription/AddDescription'
 
-export function Description({isDescVisible, clipBoard, currBoard, currCard, onToggleCardDesc }) {
-    //   const state = useSelector(state => state.state)
-    //   const dispatch = useDispatch()
-
-
-
-    useEffect(() => {
-        return () => {
-            // componnent willUnmount
-        }
-    }, [])
-
+export function Description({ isDescVisible, clipBoard, currBoard, currCard, onToggleCardDesc }) {
 
 
     return (

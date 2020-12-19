@@ -11,7 +11,6 @@ export function MoveCard({ currBoard, currCard, currList, onToggleMoveCard, onTo
     const onMoveCard = ({ target }) => {
         const listName = target.value
         const moveToList = Object.values(currBoard.lists).filter((list) => list.title === listName)
-        console.log('moveToList:', moveToList)
         const moveTocardIds = currBoard.lists[moveToList[0]?.id]?.cardIds
         if (!moveTocardIds) return
         if (moveTocardIds.includes(currCard.id)) return

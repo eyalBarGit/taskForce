@@ -2,7 +2,7 @@
 import UTILS from './utils'
 const KEY = 'mainStore'
 
-async function createBoard(boardName) {
+function createBoard(boardName) {
   return {
     id: UTILS.generatePassword(4),
     name: boardName,
@@ -19,31 +19,36 @@ async function createBoard(boardName) {
     createdAt: new Date().toLocaleDateString()
 
   }
+
+
 }
 
-async function createCard(title) {
+function createCard(title) {
   return {
     id: UTILS.generatePassword(5),
     title: title,
     content: '',
     createdAt: new Date().toLocaleDateString()
   }
+
 }
-async function createList(title) {
+
+function createList(title) {
   return {
     id: UTILS.generatePassword(6),
     title: title,
     cardIds: [],
     createdAt: new Date().toLocaleDateString()
-
   }
 }
 
-async function saveToStorage(store) {
+function saveToStorage(store) {
+
   UTILS.saveToStorage(KEY, store)
+
 }
 
-async function updateList(start, source, destination, draggableId) {
+function updateList(start, source, destination, draggableId) {
   const newCardIds = Array.from(start.cardIds)
   newCardIds.splice(source.index, 1)
   newCardIds.splice(destination.index, 0, draggableId)
@@ -52,9 +57,10 @@ async function updateList(start, source, destination, draggableId) {
     cardIds: newCardIds
   }
   return updatedList
+
 }
 
-async function dragOutsideList(start, source, destination, draggableId, finish) {
+function dragOutsideList(start, source, destination, draggableId, finish) {
   const startCardIds = start.cardIds
   startCardIds.splice(source.index, 1);
 
@@ -73,18 +79,15 @@ async function dragOutsideList(start, source, destination, draggableId, finish) 
     newStartList: newStartList,
     newFinishList: newFinishList
   }
-}
-async function dragList(source, destination, draggableId, currBoard) {
 
+}
+function dragList(source, destination, draggableId, currBoard) {
   const newListOrder = currBoard.listOrder
   newListOrder.splice(source.index, 1)
   newListOrder.splice(destination.index, 0, draggableId)
   return newListOrder
+
 }
-
-
-
-
 
 
 export default {

@@ -25,7 +25,6 @@ export default function (state = initialState, action) {
 
             }
         case 'ADD_FAKE_DATA':
-            console.log('action.fakeData:', action.fakeData)
             return {
                 ...state,
                 tasks: { ...state.tasks, ...action.fakeData.tasks },

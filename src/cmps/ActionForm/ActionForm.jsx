@@ -1,15 +1,10 @@
-import React, { useEffect} from 'react';
+import React, { useEffect } from 'react';
 import { useForm } from "react-hook-form";
 export function ActionForm({ currRef, placeholder, name, onSubmitFunc, toggleAdd }) {
-    // const currRef = useRef(null);
     const { register, handleSubmit } = useForm();
 
     useEffect(() => {
-        
         currRef.current.focus();
-        return () => {
-
-        }
     }, [currRef])
 
 

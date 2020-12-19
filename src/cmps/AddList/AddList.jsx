@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useRef } from 'react';
 import { useForm } from "react-hook-form";
 import { createList } from '../../store/actions/boardActions'
 
@@ -18,14 +18,6 @@ export function AddList({ currBoard, onToggleAddList }) {
         onToggleAddList()
 
     }
-
-    useEffect(() => {
-        listName.current.focus();
-        return () => {
-
-        }
-    }, [])
-
 
     return (
         <div className="add-list ">

@@ -7,7 +7,7 @@ import { updateColumn, changeColumnOrder, saveToStorage } from '../store/actions
 import styled from 'styled-components';
 import taskService from '../service/taskService'
 
-export function TaskForceApp(props) {
+export function TaskForceApp() {
     const tasks = useSelector((state) => state.task.tasks)
     const store = useSelector((state) => state.task)
     const columns = store.columns

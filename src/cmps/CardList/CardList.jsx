@@ -1,11 +1,10 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { CardPreview } from '../CardPreview/CardPreview';
 import { useParams, useHistory } from 'react-router-dom'
 import { useDispatch } from 'react-redux';
-import { toggleCardDetails ,updateCurrList} from '../../store/actions/cardActions'
+import { toggleCardDetails, updateCurrList } from '../../store/actions/cardActions'
 
-export function CardList(props) {
-    const { cards, provided, cardIds, currListID } = props
+export function CardList({ cards, provided, cardIds, currListID }) {
     const { boardid } = useParams()
     const dispatch = useDispatch()
     const history = useHistory()
@@ -15,13 +14,6 @@ export function CardList(props) {
         dispatch(updateCurrList(currListID.id))
         dispatch(toggleCardDetails(true))
     }
-
-    useEffect(() => {
-        return () => {
-        }
-    }, [cardIds])
-
-
 
 
     return (

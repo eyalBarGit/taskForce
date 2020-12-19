@@ -22,7 +22,6 @@ var initialState = {
 export default function (state = initialState, action) {
     switch (action.type) {
         case 'CREATE_CARD':
-            console.log('created')
             return {
                 ...state,
                 boards: {

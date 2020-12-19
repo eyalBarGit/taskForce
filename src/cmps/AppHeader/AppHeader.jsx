@@ -15,7 +15,7 @@ import { AppHeaderMenu } from './AppHeaderMenu/AppHeaderMenu';
 import { BoardsMenu } from './BoardsMenu/BoardsMenu'
 
 
-export function AppHeader(props) {
+export function AppHeader() {
 
     const state = useSelector(state => state.mainStore)
     const { activeBoard } = state
@@ -70,8 +70,6 @@ export function AppHeader(props) {
 
     useEffect(() => {
         activeBoard ? setTheme('') : setTheme('dark')
-        return () => {
-        }
     }, [activeBoard])
 
     return (

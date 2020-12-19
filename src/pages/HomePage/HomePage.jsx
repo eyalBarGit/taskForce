@@ -6,7 +6,7 @@ import { setActiveBoard, saveToStorage } from '../../store/actions/boardActions'
 import { createBoard } from '../../store/actions/boardActions';
 import { ActionForm } from '../../cmps/ActionForm/ActionForm';
 
-export function HomePage(props) {
+export function HomePage() {
     const state = useSelector(state => state.mainStore)
     const { id } = useParams();
     const currBoard = state.boards[id]
@@ -31,9 +31,6 @@ export function HomePage(props) {
 
     useEffect(() => {
         dispatch(setActiveBoard(''))
-
-        return () => {
-        }
     }, [dispatch])
 
 

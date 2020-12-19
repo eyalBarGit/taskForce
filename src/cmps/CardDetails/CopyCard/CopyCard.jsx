@@ -20,8 +20,6 @@ export function CopyCard({ currBoard, currCard, onToggleCopyCard }) {
 
     useEffect(() => {
         setListOptions(Object.values(currBoard.lists))
-        return () => {
-        }
     }, [currBoard])
 
 

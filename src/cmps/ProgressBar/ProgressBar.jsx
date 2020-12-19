@@ -1,11 +1,6 @@
-import React, { useEffect } from 'react';
-// import { useDispatch, useSelector } from 'react-redux';
+import React from 'react';
 
 export function ProgressBar({ bgcolor, completed }) {
-    //   const state = useSelector(state => state.state)
-    //   const dispatch = useDispatch()
-
-
 
     const fillerStyles = {
         width: `${completed}%`,
@@ -18,13 +13,6 @@ export function ProgressBar({ bgcolor, completed }) {
         fontWeight: 'bold'
     }
 
-
-
-    useEffect(() => {
-        return () => {
-            // componnent willUnmount
-        }
-    }, [])
 
 
 

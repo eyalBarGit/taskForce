@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 
 
-export function BoardList(props) {
+export function BoardList() {
     const mainStore = useSelector(state => state.mainStore)
     const { boards, favBoards } = mainStore
     const [boardList, setBoardList] = useState('')
@@ -23,10 +23,9 @@ export function BoardList(props) {
     )
 
 
-    const init = useCallback(
-        () => {
-            setBoardList(getAllBoards())
-        },
+    const init = useCallback(() => {
+        setBoardList(getAllBoards())
+    },
         [getAllBoards],
     )
 

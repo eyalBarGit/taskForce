@@ -5,8 +5,7 @@ import { createCard } from '../../store/actions/listActions'
 import { useDispatch } from 'react-redux';
 import { ActionForm } from '../ActionForm/ActionForm';
 
-export function AddCard(props) {
-    const { currBoard, currList, toggleAddCard } = props
+export function AddCard({ currBoard, currList, toggleAddCard }) {
     const dispatch = useDispatch()
     const { reset } = useForm();
     const cardTitle = useRef(null);

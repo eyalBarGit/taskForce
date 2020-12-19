@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useCallback, useRef, useMemo } from 'react';
+import React, { useState, useEffect, useCallback, useRef } from 'react';
 import styled from 'styled-components'
 import { useDispatch, useSelector } from 'react-redux';
 import { useParams } from 'react-router-dom'
@@ -19,7 +19,7 @@ import { BlackScreen } from '../CardDetails/BlackScreen/BlackScreen'
 import { AddList } from '../AddList/AddList'
 
 
-export function Board(props) {
+export function Board() {
     const state = useSelector(state => state.mainStore)
     const { isCardDetailShown, isBgSideOpen } = state
     const [isAddListVisible, setAddList] = useState(false)
@@ -37,11 +37,9 @@ export function Board(props) {
         [state.boards, boardid, dispatch,]
     )
 
-    useEffect(() => {
-        if (!currBoard) return
-    }, [currBoard])
 
-    const onDragEnd = useMemo(() => async (result) => {
+
+    const onDragEnd = (result) => {
         const { destination, source, draggableId, type } = result;
 
         if (!destination) { return }
@@ -54,17 +52,17 @@ export function Board(props) {
         const finish = currBoard.lists[destination.droppableId]
 
         if (start === finish && !type === 'list') {
-            await dispatch(dragInsideList(start, source, destination, draggableId, currBoard))
+            dispatch(dragInsideList(start, source, destination, draggableId, currBoard))
             return
         }
         if (type === 'list') {
-            await dispatch(dragList(source, destination, draggableId, currBoard))
+            dispatch(dragList(source, destination, draggableId, currBoard))
             return
         }
-        await dispatch(dragOutsideList(start, source, destination, draggableId, currBoard, finish))
+        dispatch(dragOutsideList(start, source, destination, draggableId, currBoard, finish))
 
     }
-        , [currBoard, dispatch])
+
 
 
     const toggleBgBoard = () => {
@@ -101,7 +99,7 @@ export function Board(props) {
                 {(provided) => {
                     return (
                         <div ref={boardRef} className="board margin-center align-center">
-                            <img className="board-background" src={require(`../../assets/images/bgs/${currBoard.backgroundImg}.jpg`)} alt=""/>
+                            <img className="board-background" src={require(`../../assets/images/bgs/${currBoard.backgroundImg}.jpg`)} alt="" />
                             <MainDndArea
                                 {...provided.droppableProps}
                                 ref={provided.innerRef}

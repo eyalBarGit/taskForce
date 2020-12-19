@@ -1,13 +1,12 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 
 import { Draggable } from 'react-beautiful-dnd'
 import styled from 'styled-components'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPencilAlt, faTasks, faClock, faEye, faClipboardList } from '@fortawesome/free-solid-svg-icons'
 import { CardLabel } from '../CardDetails/CardLabel/CardLabel'
-export function CardPreview(props) {
+export function CardPreview({ cards, cardid, index}) {
 
-    const { cards, cardid, } = props
     const currCard = cards[cardid]
 
     const pencil = <FontAwesomeIcon icon={faPencilAlt} />
@@ -17,15 +16,9 @@ export function CardPreview(props) {
     const clipBoard = <FontAwesomeIcon icon={faClipboardList} />
 
 
-    useEffect(() => {
-        return () => {
-
-        }
-    }, [])
-
     if (!currCard) return 'loading...'
     return (
-        <Draggable draggableId={currCard?.id} index={props.index}>
+        <Draggable draggableId={currCard?.id} index={index}>
             {(provided, snapshot) => (
                 <div>
                     <MainContainer

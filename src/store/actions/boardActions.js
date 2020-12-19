@@ -9,7 +9,6 @@ export function dragInsideList(start, source, destination, draggableId, currBoar
                 updatedList: updatedList,
                 currBoard: currBoard
             }
-            console.log('currBoard', currBoard)
             dispatch(_dragInsideList(data));
 
         }
@@ -31,7 +30,6 @@ export function dragOutsideList(start, source, destination, draggableId, currBoa
 
         }
         catch (err) {
-            console.log('there was an error')
             throw err
         }
     }
@@ -47,7 +45,6 @@ export function dragList(source, destination, draggableId, currBoard) {
             dispatch(_dragList(data));
         }
         catch (err) {
-            console.log('there was an error')
             throw err
         }
     }
@@ -63,7 +60,6 @@ export function createBoard(boardName = "New Board") {
             dispatch(_createBoard(data))
         }
         catch (err) {
-            console.log('there was an error')
             throw err
         }
     }
@@ -75,7 +71,6 @@ export function deleteBoard(boardToDelete) {
             dispatch(_deleteBoard(boardToDelete))
         }
         catch (err) {
-            console.log('there was an error')
             throw err
         }
     }
@@ -91,7 +86,6 @@ export function changeBoardName(currBoard, boardName) {
             dispatch(_changeBoardName(data))
         }
         catch (err) {
-            console.log('there was an error')
             throw err
         }
     }
@@ -110,7 +104,6 @@ export function createList(currBoard, listName) {
 
         }
         catch (err) {
-            console.log('there was an error')
             throw err
         }
     }
@@ -122,7 +115,6 @@ export function favoriteBoard(currBoard) {
             dispatch(_favoriteBoard(currBoard))
         }
         catch (err) {
-            console.log('there was an error')
             throw err
         }
     }
@@ -134,7 +126,6 @@ export function removeSavedBoard(currBoard) {
             dispatch(_removeSavedBoard(currBoard))
         }
         catch (err) {
-            console.log('there was an error')
             throw err
         }
     }
@@ -152,7 +143,6 @@ export function changeBoardBackground(currBoard, bgName) {
 
         }
         catch (err) {
-            console.log('there was an error')
             throw err
         }
     }

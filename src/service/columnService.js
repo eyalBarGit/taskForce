@@ -1,7 +1,6 @@
 const utils = require('../service/utils')
 const KEY = "TASKS"
 function _getColumns() {
-    console.log('columnService')
     var gColumns = {
         'column-1': {
             id: 'column-1',

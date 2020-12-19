@@ -1,9 +1,6 @@
 import React, { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
-import {
-    saveToStorage,
-    changeBoardBackground,
-} from '../../store/actions/boardActions'
+import { saveToStorage, changeBoardBackground, } from '../../store/actions/boardActions'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faTimes } from '@fortawesome/free-solid-svg-icons'
 
@@ -33,16 +30,16 @@ export function BoardBackground({ state, currBoard, toggleBgBoard }) {
                 dispatch(changeBoardBackground(currBoard, 'mountains'))
                 break;
             case "water":
-                dispatch(changeBoardBackground(currBoard, 'water',''))
+                dispatch(changeBoardBackground(currBoard, 'water', ''))
                 break;
             case "lake":
-                dispatch(changeBoardBackground(currBoard, 'lake',''))
+                dispatch(changeBoardBackground(currBoard, 'lake', ''))
                 break;
             case "boraBora":
-                dispatch(changeBoardBackground(currBoard, 'boraBora',''))
+                dispatch(changeBoardBackground(currBoard, 'boraBora', ''))
                 break;
             case "sky":
-                dispatch(changeBoardBackground(currBoard, 'sky',''))
+                dispatch(changeBoardBackground(currBoard, 'sky', ''))
                 break;
             default:
                 break;

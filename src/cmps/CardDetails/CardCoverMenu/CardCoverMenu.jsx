@@ -4,6 +4,7 @@ import { setCardCover } from '../../../store/actions/cardActions'
 import { useDispatch } from 'react-redux';
 import { ColorPallette } from '../../ColorPallette/ColorPallette'
 export function CardCoverMenu({ onToggleColor, toggleCardVisibility, currCard, currBoard }) {
+
     const dispatch = useDispatch()
 
     const onCloseCover = () => {
