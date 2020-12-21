@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/taskforce/static/css/main.d84859a1.chunk.css",
-    "main.js": "/taskforce/static/js/main.7c849e69.chunk.js",
-    "main.js.map": "/taskforce/static/js/main.7c849e69.chunk.js.map",
+    "main.js": "/taskforce/static/js/main.8fb3d830.chunk.js",
+    "main.js.map": "/taskforce/static/js/main.8fb3d830.chunk.js.map",
     "runtime-main.js": "/taskforce/static/js/runtime-main.95470a51.js",
     "runtime-main.js.map": "/taskforce/static/js/runtime-main.95470a51.js.map",
     "static/css/2.8dbe6964.chunk.css": "/taskforce/static/css/2.8dbe6964.chunk.css",
     "static/js/2.36df1e6b.chunk.js": "/taskforce/static/js/2.36df1e6b.chunk.js",
     "static/js/2.36df1e6b.chunk.js.map": "/taskforce/static/js/2.36df1e6b.chunk.js.map",
     "index.html": "/taskforce/index.html",
-    "precache-manifest.5eba766476c2f8ca3ea47edb1be0ba85.js": "/taskforce/precache-manifest.5eba766476c2f8ca3ea47edb1be0ba85.js",
+    "precache-manifest.0634cf92cf2036f9874f1e991fd9ca9e.js": "/taskforce/precache-manifest.0634cf92cf2036f9874f1e991fd9ca9e.js",
     "service-worker.js": "/taskforce/service-worker.js",
     "static/css/2.8dbe6964.chunk.css.map": "/taskforce/static/css/2.8dbe6964.chunk.css.map",
     "static/css/main.d84859a1.chunk.css.map": "/taskforce/static/css/main.d84859a1.chunk.css.map",
@@ -27,6 +27,6 @@
     "static/css/2.8dbe6964.chunk.css",
     "static/js/2.36df1e6b.chunk.js",
     "static/css/main.d84859a1.chunk.css",
-    "static/js/main.7c849e69.chunk.js"
+    "static/js/main.8fb3d830.chunk.js"
   ]
 }
