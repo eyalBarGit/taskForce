@@ -89,18 +89,14 @@ export function AppHeader() {
 
                             </div>
                         }
-                        <input type="text" placeholder="SEARCH..." />
                     </div>
                     <div className="logo">
                         <h1>TaskForce</h1>
                     </div>
                     <div className="right-side flex align-center">
                         {currBoard &&
-                            <button onClick={onToggleAppHeaderMenu}>{plusSign}</button>
+                            <button className="app-header-menu-btn" onClick={onToggleAppHeaderMenu}>{plusSign}</button>
                         }
-                        <button>{info}</button>
-                        <button>{notifications}</button>
-                        <button>account</button>
                     </div>
                 </div>
 
