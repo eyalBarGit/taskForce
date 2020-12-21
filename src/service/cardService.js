@@ -1,8 +1,5 @@
 import UTILS from '../service/utils'
 
-
-
-
 function deleteCard(currBoard, currList, cardId) {
   const newCards = currBoard.cards
   delete newCards[cardId]

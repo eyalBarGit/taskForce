@@ -66,18 +66,43 @@ export function CardCheckList({ currCheckList, currCard, currBoard }) {
 
     const calculatePercentage = useCallback(
         () => {
-            var number = Object.values(currCheckList.list).length;
-            var currChecked = checkedItems.length;
-            var percent = (currChecked * 100) / number;
+            var numberOfCheckLists = Object.values(currCheckList.list).length;
+            var numberOfCehckedItems = checkedItems.length;
+            var percent = (numberOfCehckedItems * 100) / numberOfCheckLists;
             isNaN(percent) ? setCompleted(0) : setCompleted(percent.toFixed())
         },
         [currCheckList.list, checkedItems.length],
+    )
+
+    const updatePercentageOnMount = useCallback(
+        () => {
+            const keys = Object.keys(currCheckList.list)
+            const lists = []
+            const checkedItems = []
+
+            keys.forEach((key) => {
+                lists.push(currCheckList.list[key])
+            })
+            lists.forEach((item) => {
+                if (item.isChecked) {
+                    checkedItems.push(item)
+                    setCheckItems([...checkedItems])
+                }
+
+            })
+
+        },
+        [currCheckList.list],
     )
 
     useEffect(() => {
         calculatePercentage()
     }, [calculatePercentage, currCheckItem, currCheckList])
 
+
+    useEffect(() => {
+        updatePercentageOnMount()
+    }, [updatePercentageOnMount])
 
 
     return (

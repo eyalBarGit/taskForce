@@ -34,7 +34,7 @@ if (!initialState)
                                 id: 'check-2',
                                 name: 'checklist-2',
                                 list: {
-                                    'firstOne': { id: 'firstOne', text: 'firstOne' }, 'secondOne': { id: 'secondOne', text: 'secondOne' }
+                                    'firstOne': { id: 'firstOne', text: 'firstOne', isChecked: false }, 'secondOne': { id: 'secondOne', text: 'secondOne', isChecked: false }
                                 }
                             }
                         },
@@ -64,7 +64,7 @@ if (!initialState)
                                 id: 'check-2',
                                 name: 'checklist-2',
                                 list: {
-                                    'firstOne': { id: 'firstOne', text: 'firstOne' }, 'secondOne': { id: 'secondOne', text: 'secondOne' }
+                                    'firstOne': { id: 'firstOne', text: 'firstOne', isChecked: true }, 'secondOne': { id: 'secondOne', text: 'secondOne', isChecked: true }
                                 }
                             }
                         },
@@ -94,7 +94,7 @@ if (!initialState)
                                 id: 'check-2',
                                 name: 'checklist-2',
                                 list: {
-                                    'firstOne': { id: 'firstOne', text: 'firstOne' }, 'secondOne': { id: 'secondOne', text: 'secondOne' }
+                                    'firstOne': { id: 'firstOne', text: 'firstOne', isChecked: true }, 'secondOne': { id: 'secondOne', text: 'secondOne', isChecked: false }
                                 }
                             }
                         },
@@ -124,7 +124,7 @@ if (!initialState)
                                 id: 'check-2',
                                 name: 'checklist-2',
                                 list: {
-                                    'firstOne': { id: 'firstOne', text: 'firstOne' }, 'secondOne': { id: 'secondOne', text: 'secondOne' }
+                                    'firstOne': { id: 'firstOne', text: 'firstOne', isChecked: true }, 'secondOne': { id: 'secondOne', text: 'secondOne', isChecked: false }
                                 }
                             }
                         },
@@ -154,7 +154,7 @@ if (!initialState)
                                 id: 'check-2',
                                 name: 'checklist-2',
                                 list: {
-                                    'firstOne': { id: 'firstOne', text: 'firstOne' }, 'secondOne': { id: 'secondOne', text: 'secondOne' }
+                                    'firstOne': { id: 'firstOne', text: 'firstOne', isChecked: true }, 'secondOne': { id: 'secondOne', text: 'secondOne', isChecked: true }
                                 }
                             }
                         },
@@ -184,8 +184,8 @@ if (!initialState)
                                 id: 'check-2',
                                 name: 'checklist-2',
                                 list: {
-                                    'firstOne': { id: 'firstOne', text: 'firstOne' },
-                                    'secondOne': { id: 'secondOne', text: 'secondOne' }
+                                    'firstOne': { id: 'firstOne', text: 'firstOne', isChecked: true },
+                                    'secondOne': { id: 'secondOne', text: 'secondOne', isChecked: true }
                                 }
                             }
                         },
@@ -203,16 +203,10 @@ if (!initialState)
                                 id: 'check-1',
                                 name: 'checklist-1',
                                 list: {
-                                 
+                                    'firstOne': { id: 'firstOne', text: 'firstOne', isChecked: true }, 'secondOne': { id: 'secondOne', text: 'secondOne', isChecked: true }
                                 }
                             },
-                            'check-2': {
-                                id: 'check-2',
-                                name: 'checklist-2',
-                                list: {
-                                    'firstOne': { id: 'firstOne', text: 'firstOne' }, 'secondOne': { id: 'secondOne', text: 'secondOne' }
-                                }
-                            }
+
                         },
                         cardCover: "#4ae06d",
                         labels: ["#4ae06d",]
@@ -240,7 +234,7 @@ if (!initialState)
                                 id: 'check-2',
                                 name: 'checklist-2',
                                 list: {
-                                    'firstOne': { id: 'firstOne', text: 'firstOne' }, 'secondOne': { id: 'secondOne', text: 'secondOne' }
+                                    'firstOne': { id: 'firstOne', text: 'firstOne', isChecked: true }, 'secondOne': { id: 'secondOne', text: 'secondOne', isChecked: true }
                                 }
                             }
                         },
@@ -270,7 +264,7 @@ if (!initialState)
                                 id: 'check-2',
                                 name: 'checklist-2',
                                 list: {
-                                    'firstOne': { id: 'firstOne', text: 'firstOne' }, 'secondOne': { id: 'secondOne', text: 'secondOne' }
+                                    'firstOne': { id: 'firstOne', text: 'firstOne', isChecked: true }, 'secondOne': { id: 'secondOne', text: 'secondOne', isChecked: true }
                                 }
                             }
                         },
@@ -300,7 +294,7 @@ if (!initialState)
                                 id: 'check-2',
                                 name: 'checklist-2',
                                 list: {
-                                    'firstOne': { id: 'firstOne', text: 'firstOne' }, 'secondOne': { id: 'secondOne', text: 'secondOne' }
+                                    'firstOne': { id: 'firstOne', text: 'firstOne', isChecked: false }, 'secondOne': { id: 'secondOne', text: 'secondOne', isChecked: false }
                                 }
                             }
                         },
@@ -330,7 +324,7 @@ if (!initialState)
                                 id: 'check-2',
                                 name: 'checklist-2',
                                 list: {
-                                    'firstOne': { id: 'firstOne', text: 'firstOne' }, 'secondOne': { id: 'secondOne', text: 'secondOne' }
+                                    'firstOne': { id: 'firstOne', text: 'firstOne', isChecked: true }, 'secondOne': { id: 'secondOne', text: 'secondOne', isChecked: true }
                                 }
                             }
                         },
@@ -360,7 +354,7 @@ if (!initialState)
                                 id: 'check-2',
                                 name: 'checklist-2',
                                 list: {
-                                    'firstOne': { id: 'firstOne', text: 'firstOne' }, 'secondOne': { id: 'secondOne', text: 'secondOne' }
+                                    'firstOne': { id: 'firstOne', text: 'firstOne', isChecked: true }, 'secondOne': { id: 'secondOne', text: 'secondOne', isChecked: true }
                                 }
                             }
                         },
@@ -417,7 +411,7 @@ if (!initialState)
                                 id: 'check-2',
                                 name: 'checklist-2',
                                 list: {
-                                    'firstOne': { id: 'firstOne', text: 'firstOne' }, 'secondOne': { id: 'secondOne', text: 'secondOne' }
+                                    'firstOne': { id: 'firstOne', text: 'firstOne', isChecked: true }, 'secondOne': { id: 'secondOne', text: 'secondOne', isChecked: true }
                                 }
                             }
                         },
@@ -447,7 +441,7 @@ if (!initialState)
                                 id: 'check-2',
                                 name: 'checklist-2',
                                 list: {
-                                    'firstOne': { id: 'firstOne', text: 'firstOne' }, 'secondOne': { id: 'secondOne', text: 'secondOne' }
+                                    'firstOne': { id: 'firstOne', text: 'firstOne', isChecked: true }, 'secondOne': { id: 'secondOne', text: 'secondOne', isChecked: true }
                                 }
                             }
                         },
@@ -477,7 +471,7 @@ if (!initialState)
                                 id: 'check-2',
                                 name: 'checklist-2',
                                 list: {
-                                    'firstOne': { id: 'firstOne', text: 'firstOne' }, 'secondOne': { id: 'secondOne', text: 'secondOne' }
+                                    'firstOne': { id: 'firstOne', text: 'firstOne', isChecked: true }, 'secondOne': { id: 'secondOne', text: 'secondOne', isChecked: true }
                                 }
                             }
                         },
@@ -507,7 +501,7 @@ if (!initialState)
                                 id: 'check-2',
                                 name: 'checklist-2',
                                 list: {
-                                    'firstOne': { id: 'firstOne', text: 'firstOne' }, 'secondOne': { id: 'secondOne', text: 'secondOne' }
+                                    'firstOne': { id: 'firstOne', text: 'firstOne', isChecked: true }, 'secondOne': { id: 'secondOne', text: 'secondOne', isChecked: false }
                                 }
                             }
                         },
@@ -537,7 +531,7 @@ if (!initialState)
                                 id: 'check-2',
                                 name: 'checklist-2',
                                 list: {
-                                    'firstOne': { id: 'firstOne', text: 'firstOne' }, 'secondOne': { id: 'secondOne', text: 'secondOne' }
+                                    'firstOne': { id: 'firstOne', text: 'firstOne', isChecked: false }, 'secondOne': { id: 'secondOne', text: 'secondOne', isChecked: true }
                                 }
                             }
                         },
@@ -567,7 +561,7 @@ if (!initialState)
                                 id: 'check-2',
                                 name: 'checklist-2',
                                 list: {
-                                    'firstOne': { id: 'firstOne', text: 'firstOne' }, 'secondOne': { id: 'secondOne', text: 'secondOne' }
+                                    'firstOne': { id: 'firstOne', text: 'firstOne', isChecked: true }, 'secondOne': { id: 'secondOne', text: 'secondOne', isChecked: true }
                                 }
                             }
                         },
@@ -597,7 +591,7 @@ if (!initialState)
                                 id: 'check-2',
                                 name: 'checklist-2',
                                 list: {
-                                    'firstOne': { id: 'firstOne', text: 'firstOne' }, 'secondOne': { id: 'secondOne', text: 'secondOne' }
+                                    'firstOne': { id: 'firstOne', text: 'firstOne', isChecked: true }, 'secondOne': { id: 'secondOne', text: 'secondOne', isChecked: true }
                                 }
                             }
                         },
@@ -627,7 +621,7 @@ if (!initialState)
                                 id: 'check-2',
                                 name: 'checklist-2',
                                 list: {
-                                    'firstOne': { id: 'firstOne', text: 'firstOne' }, 'secondOne': { id: 'secondOne', text: 'secondOne' }
+                                    'firstOne': { id: 'firstOne', text: 'firstOne', isChecked: true }, 'secondOne': { id: 'secondOne', text: 'secondOne', isChecked: true }
                                 }
                             }
                         },
