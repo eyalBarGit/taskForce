@@ -8,8 +8,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHome } from '@fortawesome/free-solid-svg-icons'
 import { faBorderAll } from '@fortawesome/free-solid-svg-icons'
 import { faPlus } from '@fortawesome/free-solid-svg-icons'
-import { faInfoCircle } from '@fortawesome/free-solid-svg-icons'
-import { faBell } from '@fortawesome/free-solid-svg-icons'
 import { faStar } from '@fortawesome/free-solid-svg-icons'
 import { AppHeaderMenu } from './AppHeaderMenu/AppHeaderMenu';
 import { BoardsMenu } from './BoardsMenu/BoardsMenu'
@@ -32,8 +30,6 @@ export function AppHeader() {
     const home = <FontAwesomeIcon icon={faHome} />
     const boards = <FontAwesomeIcon icon={faBorderAll} />
     const plusSign = <FontAwesomeIcon icon={faPlus} />
-    const info = <FontAwesomeIcon icon={faInfoCircle} />
-    const notifications = <FontAwesomeIcon icon={faBell} />
     const star = <FontAwesomeIcon icon={faStar} />
 
 

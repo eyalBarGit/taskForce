@@ -38,15 +38,18 @@ export function HomePage() {
     return (
         <div className="home-page margin-center">
             <div className="center-container margin-center">
-                <div className="flex align-center space-between">
-                    <h1>CHOOSE YOUR BOARD</h1>
+                <div className="top-part flex align-center space-between">
 
+                    <h1>CHOOSE YOUR BOARD</h1>
                     <div className="add-board-section flex">
                         {!isAddBoardVis &&
                             <button onClick={onToggleAddBoard} className="create-board">Create Board</button>
                         }
                         {isAddBoardVis &&
-                            <ActionForm currRef={boardRef} name="boardTitle" placeholder={'Add Board Title'} toggleAdd={onToggleAddBoard} onSubmitFunc={onCreateBoard} />
+                            <div className="add-board">
+
+                                <ActionForm currRef={boardRef} name="boardTitle" placeholder={'Add Board Title'} toggleAdd={onToggleAddBoard} onSubmitFunc={onCreateBoard} />
+                            </div>
                         }
                     </div>
                 </div>
