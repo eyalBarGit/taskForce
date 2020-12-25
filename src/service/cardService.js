@@ -16,7 +16,6 @@ function copyCard(newCard) {
   return new CopyCard(newCard)
 }
 
-
 function CopyCard(cardToCopy) {
     this.id = UTILS.generatePassword(5);
     this.title = cardToCopy.title;

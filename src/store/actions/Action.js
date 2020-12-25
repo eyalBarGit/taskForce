@@ -9,7 +9,6 @@ export function setState() {
       dispatch({ type: 'GET_STATE' });
     }
     catch (err) {
-      console.log('there was an error')
       throw err
     }
   }

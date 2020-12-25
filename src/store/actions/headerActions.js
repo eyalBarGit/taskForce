@@ -9,7 +9,6 @@ export function createList(currBoard, listTitle) {
                 currBoard: currBoard,
             }
             dispatch(_createList(data));
-            // dispatch({ type: 'GET_STATE' });
         }
         catch (err) {
             throw err
@@ -21,7 +20,6 @@ export function toggleBgSide() {
     return async dispatch => {
         try {
             dispatch(_toggleBgSide());
-            // dispatch({ type: 'GET_STATE' });
         }
         catch (err) {
             throw err

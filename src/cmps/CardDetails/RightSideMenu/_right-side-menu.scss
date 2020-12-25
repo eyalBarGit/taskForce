@@ -5,7 +5,7 @@
     overflow-x: hidden;
     padding-inline-end: 5px;
     p {
-        font-size: 12px;
+        font-size: 14px;
         margin: 0;
     }
     span {
@@ -23,7 +23,7 @@
         margin-block-end: 7px;
         font-family: $baseFont;
         font-weight: 400;
-        font-size: 12px;
+        font-size: 14px;
         text-align: left;
         &:active {
             transform: scale(0.98);
@@ -52,7 +52,7 @@
         }
         font-size: 24px;
         button {
-            font-size: 12px;
+            font-size: 14px;
             color: black ;
         }
         .calendar {

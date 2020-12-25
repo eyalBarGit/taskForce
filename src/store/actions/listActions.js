@@ -28,7 +28,6 @@ export function deleteList(currBoard, currList) {
                 newBoardCards: updatedData.newBoardCards
             }
             dispatch(_deleteList(data));
-            // dispatch({ type: 'GET_STATE' });
         }
         catch (err) {
             throw err

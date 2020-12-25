@@ -188,11 +188,11 @@ padding-right:20px;
 .due-date{
 p.title-date{
   margin-right:5px;
-  font-size:12px;
+  font-size:14px;
   font-weight:bold;
 }
   p{
-    font-size:12px;
+    font-size:14px;
     margin-top:-5px;
     line-height:0;
     margin-bottom:20px;

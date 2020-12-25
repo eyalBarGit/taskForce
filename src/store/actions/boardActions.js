@@ -169,7 +169,6 @@ export function setActiveBoard(boardId) {
 
         }
         catch (err) {
-            console.log('there was an error')
             throw err
         }
     }
@@ -181,7 +180,6 @@ export function saveToStorage(store) {
 
         }
         catch (err) {
-            console.log('there was an error')
             throw err
         }
     }
