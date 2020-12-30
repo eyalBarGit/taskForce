@@ -27,4 +27,10 @@
             position: relative;
         }
     }
+    @media (max-width: 750px) {
+        min-width: 100vw;
+        .container {
+            margin: 10px;
+        }
+    }
 }

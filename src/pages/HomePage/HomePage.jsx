@@ -47,7 +47,6 @@ export function HomePage() {
                         }
                         {isAddBoardVis &&
                             <div className="add-board">
-
                                 <ActionForm currRef={boardRef} name="boardTitle" placeholder={'Add Board Title'} toggleAdd={onToggleAddBoard} onSubmitFunc={onCreateBoard} />
                             </div>
                         }
@@ -55,8 +54,6 @@ export function HomePage() {
                 </div>
 
                 <div className="borad-list-container flex justify-center">
-                    <div className="side-bar">
-                    </div>
                     <section className="board-list-section">
                         <BoardList />
                     </section>

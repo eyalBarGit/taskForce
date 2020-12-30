@@ -14,4 +14,10 @@
             background-color: $LightGray;
         }
     }
+    @media (max-width:750px) {
+        .center-container{
+            width: 100vw;
+        }
+        
+    }
 }

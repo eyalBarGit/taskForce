@@ -1,8 +1,8 @@
 import UTILS from '../../service/utils'
 import boards from '../../data/boards'
 var initialState = UTILS.loadFromStorage('mainStore')
-
-if (!initialState)
+console.log('initial:', initialState)
+if (!initialState || initialState.boards['board-1'].cards['card-1'].id !== 'newCardId')
 
     initialState = {
         boards: boards,
