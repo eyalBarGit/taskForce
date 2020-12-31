@@ -1,9 +1,13 @@
 .app-header {
-  // background-color: #4D8076;
-
   h2 {
     color: #fff;
   }
+
+  @media (max-width: 750px) {
+    .bottom-nav {
+      h1 {
+        font-size: 14px !important;
+      }
+    }
+  }
 }
-
-

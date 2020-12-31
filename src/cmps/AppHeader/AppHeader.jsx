@@ -103,7 +103,7 @@ export function AppHeader() {
                     <h1> {currBoard.name}</h1>
                     <button className="btn" onClick={toggleBgBoard}>Change Background</button>
                     <button onClick={onSaveBoard} className={`btn btn-fav-board ${currBoard?.isFav ? 'saved' : ''}`}>{star}</button>
-                    <p>Total Lists: {currBoard.listOrder.length}</p>
+                    <p className="total-lists">Total Lists: {currBoard.listOrder.length}</p>
                     {showSavedTitle &&
                         <p className="save-notification">saved!</p>
                     }

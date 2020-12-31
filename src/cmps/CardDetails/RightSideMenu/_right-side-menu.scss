@@ -40,7 +40,7 @@
         height: 22px;
         background-color: #4fcc3f;
         font-size: 15px;
-        color:#fff;
+        color: #fff;
         border-radius: 3px;
     }
     .cal {
@@ -53,15 +53,23 @@
         font-size: 24px;
         button {
             font-size: 14px;
-            color: black ;
+            color: black;
         }
         .calendar {
             margin-block-end: 7px;
         }
-        .react-calendar__month-view__weekdays__weekday{
-            abbr{
-                font-size: 10px ;
+        .react-calendar__month-view__weekdays__weekday {
+            abbr {
+                font-size: 10px;
             }
         }
     }
+    @media (max-width: 750px) {
+        // flex-direction: row;
+        // flex-wrap: wrap;
+        width: 120px;
+        position: fixed;
+        transform: translateX(100%);
+    }
+ 
 }

@@ -27,7 +27,6 @@ export function CardDetails() {
     const currCheckList = Object.values(currCard?.checklist)
     const [isMouseOver, setMouseOver] = useState(false)
 
-
     const ticket = <FontAwesomeIcon icon={faTicketAlt} />
     const clipBoard = <FontAwesomeIcon icon={faClipboardList} />
     const eye = <FontAwesomeIcon icon={faEye} />
@@ -64,7 +63,6 @@ export function CardDetails() {
 
 
 
-
     const onHandleChange = ({ target }) => {
         const key = target.name
         const value = target.value
@@ -89,7 +87,7 @@ export function CardDetails() {
 
 
 
- 
+
 
     return (
         <div className="card-details" >
@@ -168,10 +166,11 @@ export function CardDetails() {
                         </section>
                     </div>
                     <div className="right-side">
-                        <div className="close-btn margin-bottom flex">
-                            <button onClick={onToggleCardDetails}>X</button>
+                        <div className="close-btn margin-bottom flex column">
+                            <button className="close-details-btn" onClick={onToggleCardDetails}>X</button>
                         </div>
                         <RightSideMenu
+                            className="right-side"
                             listid={listid}
                             currBoard={currBoard}
                             currCard={currCard}

@@ -95,8 +95,6 @@ export function List({ listId, lists, cards, currBoard, index, }) {
                         </div>
                         {isListMenuShown &&
                             <ListMenu
-
-
                                 toggleListMenu={onToggleListMenu}
                                 currBoard={currBoard}
                                 currList={currList}

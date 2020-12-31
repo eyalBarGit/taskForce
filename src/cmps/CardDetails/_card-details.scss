@@ -105,10 +105,35 @@
                 }
             }
             .right-side {
+                position: relative;
                 .close-btn {
                     justify-content: flex-end;
                 }
+                .mobile-menu {
+                    position: absolute;
+                    top: 40px;
+                    right: -10px;
+                    display: none;
+                }
             }
         }
+    }
+    @media (max-width: 750px) {
+        .card-details-board {
+            width: 100vw;
+            height: fit-content;
+            .main {
+                .left-side {
+                    width: 98%;
+                }
+                .right-side {
+                    width: 15px;
+                    .mobile-menu {
+                        display: block;
+                    }
+                }
+            }
+        }
+       
     }
 }

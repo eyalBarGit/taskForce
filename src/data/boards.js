@@ -5,7 +5,7 @@ export default  {
         isFav: false,
         cards: {
             'card-1': {
-                id: 'newCardId',
+                id: 'card-1',
                 title: 'Go to the groceries store',
                 desc: 'Click here to change the description',
                 isWatched: true,

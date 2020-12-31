@@ -1,23 +1,40 @@
-.home-page{
+.home-page {
     padding-top: 150px;
-    .center-container{
+    .center-container {
         background-color: $VeryLigtGray;
         padding: 20px;
         border-radius: 10px;
         max-width: 1180px;
-        .top-part{
+        .top-part {
             height: 100px;
         }
-        .add-board{
+        .add-board {
             padding: 8px;
             border-radius: 10px;
             background-color: $LightGray;
         }
     }
-    @media (max-width:750px) {
-        .center-container{
+    @media (max-width: 750px) {
+        padding-top: 50px;
+        .center-container {
             width: 100vw;
+            .top-part {
+                display: flex;
+                flex-direction: column;
+                .add-board {
+                    z-index: 40;
+                }
+                h1 {
+                    font-size: 20px;
+                }
+            }
         }
-        
+        .create-board {
+            height: 30px;
+        }
+   
+        h2{
+            margin-inline-start: 10px;
+        }
     }
 }

@@ -39,7 +39,6 @@ export function HomePage() {
         <div className="home-page margin-center">
             <div className="center-container margin-center">
                 <div className="top-part flex align-center space-between">
-
                     <h1>CHOOSE YOUR BOARD</h1>
                     <div className="add-board-section flex">
                         {!isAddBoardVis &&

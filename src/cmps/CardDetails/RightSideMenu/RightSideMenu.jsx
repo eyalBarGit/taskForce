@@ -18,9 +18,8 @@ export function RightSideMenu({ onToggleCardDetails, onToggleCover, isCoverOn,
     currBoard,
     currCard,
     toggleCardVisibility,
-    onToggleCardWatch
-})
- {
+    onToggleCardWatch,
+}) {
     const currList = currBoard.lists[listid]
     const cardId = currCard.id
     const [isCopyClicked, setCopyClick] = useState(false)
@@ -105,19 +104,23 @@ export function RightSideMenu({ onToggleCardDetails, onToggleCover, isCoverOn,
     return (
 
         <div className="right-side-menu flex column">
-            <p>SUGGESTED</p>
-            <button className="btn-right-side">
-                <span>
-                    {avatar}
-                </span>
+            <div className="btn-container">
+                <p>SUGGESTED</p>
+                <button className="btn-right-side">
+                    <span>
+                        {avatar}
+                    </span>
                 Join</button>
-            <p>ADD TO CARD</p>
-            <button className="btn-right-side">
-                <span>
-                    {avatar}
-                </span>
+            </div>
+            <div className="btn-container">
+                <p>ADD TO CARD</p>
+                <button className="btn-right-side">
+                    <span>
+                        {avatar}
+                    </span>
                     Members
             </button>
+            </div>
             <button onClick={onToggleLabelMenu} className="btn-right-side">
                 <span>{label}</span>
                 Labels
