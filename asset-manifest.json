@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/taskforce/static/css/main.f4e68ccd.chunk.css",
+    "main.css": "/taskforce/static/css/main.11ab8488.chunk.css",
     "main.js": "/taskforce/static/js/main.5fd7bf43.chunk.js",
     "main.js.map": "/taskforce/static/js/main.5fd7bf43.chunk.js.map",
     "runtime-main.js": "/taskforce/static/js/runtime-main.95470a51.js",
@@ -9,10 +9,10 @@
     "static/js/2.c6414b16.chunk.js": "/taskforce/static/js/2.c6414b16.chunk.js",
     "static/js/2.c6414b16.chunk.js.map": "/taskforce/static/js/2.c6414b16.chunk.js.map",
     "index.html": "/taskforce/index.html",
-    "precache-manifest.6afe1fc1fceedaad9e4abf42c2de3b0c.js": "/taskforce/precache-manifest.6afe1fc1fceedaad9e4abf42c2de3b0c.js",
+    "precache-manifest.ccb7624500bf4a48479f51c9eb3b1130.js": "/taskforce/precache-manifest.ccb7624500bf4a48479f51c9eb3b1130.js",
     "service-worker.js": "/taskforce/service-worker.js",
     "static/css/2.8dbe6964.chunk.css.map": "/taskforce/static/css/2.8dbe6964.chunk.css.map",
-    "static/css/main.f4e68ccd.chunk.css.map": "/taskforce/static/css/main.f4e68ccd.chunk.css.map",
+    "static/css/main.11ab8488.chunk.css.map": "/taskforce/static/css/main.11ab8488.chunk.css.map",
     "static/js/2.c6414b16.chunk.js.LICENSE.txt": "/taskforce/static/js/2.c6414b16.chunk.js.LICENSE.txt",
     "static/media/boraBora.jpg": "/taskforce/static/media/boraBora.989f4a87.jpg",
     "static/media/lake.jpg": "/taskforce/static/media/lake.c140c866.jpg",
@@ -26,7 +26,7 @@
     "static/js/runtime-main.95470a51.js",
     "static/css/2.8dbe6964.chunk.css",
     "static/js/2.c6414b16.chunk.js",
-    "static/css/main.f4e68ccd.chunk.css",
+    "static/css/main.11ab8488.chunk.css",
     "static/js/main.5fd7bf43.chunk.js"
   ]
 }
