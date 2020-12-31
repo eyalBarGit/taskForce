@@ -68,8 +68,9 @@
         // flex-direction: row;
         // flex-wrap: wrap;
         width: 120px;
+        height: fit-content;
         position: fixed;
-        transform: translateX(100%);
+        transform: translateX(50%);
     }
  
 }
