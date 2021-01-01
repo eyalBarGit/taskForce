@@ -1,7 +1,7 @@
 import UTILS from '../../service/utils'
 import boards from '../../data/boards'
 var initialState = UTILS.loadFromStorage('mainStore')
-if (!initialState || !initialState.resetStorage)
+if (!initialState || initialState.resetStorage)
 
     initialState = {
         boards: boards,
@@ -9,7 +9,7 @@ if (!initialState || !initialState.resetStorage)
         activeBoard: '',
         isCardDetailShown: false,
         isBgSideOpen: false,
-        resetStorage: true
+        resetStorage: false
     };
 
 export default function (state = initialState, action) {
