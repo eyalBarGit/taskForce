@@ -1,14 +1,15 @@
 import UTILS from '../../service/utils'
 import boards from '../../data/boards'
 var initialState = UTILS.loadFromStorage('mainStore')
-if (!initialState || initialState.boards['board-1'].cards['card-1'].id !== 'card-1')
+if (!initialState || !initialState.resetStorage)
 
     initialState = {
         boards: boards,
         favBoards: [],
         activeBoard: '',
         isCardDetailShown: false,
-        isBgSideOpen: false
+        isBgSideOpen: false,
+        resetStorage: true
     };
 
 export default function (state = initialState, action) {

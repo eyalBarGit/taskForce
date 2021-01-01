@@ -121,7 +121,8 @@
     @media (max-width: 750px) {
         .card-details-board {
             width: 100vw;
-            height: fit-content;
+            height: 100vh;
+            z-index: 60;
             .main {
                 .left-side {
                     width: 98%;
