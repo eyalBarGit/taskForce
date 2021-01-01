@@ -166,9 +166,7 @@ export function CardDetails() {
                         </section>
                     </div>
                     <div className="right-side">
-                        <div className="close-btn margin-bottom flex column">
-                            <button className="close-details-btn" onClick={onToggleCardDetails}>X</button>
-                        </div>
+                 
                         <RightSideMenu
                             className="right-side"
                             listid={listid}
