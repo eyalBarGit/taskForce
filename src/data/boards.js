@@ -4,8 +4,8 @@ export default  {
         name: 'Demo-Board',
         isFav: false,
         cards: {
-            'card-1-id': {
-                id: 'card-1-id',
+            'card-1': {
+                id: 'card-1',
                 title: 'Go to the groceries store',
                 desc: 'Click here to change the description',
                 isWatched: true,
@@ -359,7 +359,7 @@ export default  {
             'list-1': {
                 id: 'list-1',
                 title: 'todo',
-                cardIds: ['card-1-id', 'card-2', 'card-3', 'card-4',]
+                cardIds: ['card-1', 'card-2', 'card-3', 'card-4',]
             },
             'list-2': {
                 id: 'list-2',
