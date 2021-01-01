@@ -1,7 +1,7 @@
 import UTILS from '../../service/utils'
 import boards from '../../data/boards'
 var initialState = UTILS.loadFromStorage('mainStore')
-if (!initialState || !initialState.boards['board-1'].cards.hasOwnProperty('card-1'))
+if (!initialState || !initialState.boards['board-1'].cards.hasOwnProperty('card-1-id'))
 
     initialState = {
         boards: boards,
