@@ -5,7 +5,7 @@ import styled from 'styled-components'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPencilAlt, faTasks, faClock, faEye, faClipboardList } from '@fortawesome/free-solid-svg-icons'
 import { CardLabel } from '../CardDetails/CardLabel/CardLabel'
-export function CardPreview({ cards, cardid, index}) {
+export function CardPreview({ cards, cardid, index }) {
 
     const currCard = cards[cardid]
 
@@ -33,7 +33,6 @@ export function CardPreview({ cards, cardid, index}) {
                                 </div>
                             }
                             <div className="card-labels flex">
-
                                 {currCard.labels && currCard.labels.map(label => {
                                     return <CardLabel key={label} label={label} />
                                 })}
@@ -65,12 +64,7 @@ export function CardPreview({ cards, cardid, index}) {
                                     {Object.keys(currCard.checklist).length > 0 &&
                                         checklist
                                     }
-
-
-
-
                                 </div>
-
                             </div>
                         </div>
                     </MainContainer>

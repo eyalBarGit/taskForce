@@ -20,7 +20,6 @@ export function CardList({ cards, provided, cardIds, currListID }) {
         <div className="card-list">
             {cardIds.map((cardid, idx) => {
                 return <div key={cardid} onClick={() => onToggleCardDetails(cardid)}>
-
                     <CardPreview
                         key={cardid}
                         cards={cards}

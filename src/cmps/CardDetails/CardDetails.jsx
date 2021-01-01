@@ -24,7 +24,7 @@ export function CardDetails() {
     const dispatch = useDispatch()
     const history = useHistory()
     const [isCardTitleChange, onSetCardTitle] = useState(false)
-    const currCheckList = Object.values(currCard?.checklist)
+    const currCheckList = currCard ? Object.values(currCard.checklist) : []
     const [isMouseOver, setMouseOver] = useState(false)
 
     const ticket = <FontAwesomeIcon icon={faTicketAlt} />
@@ -83,12 +83,12 @@ export function CardDetails() {
 
     useEffect(() => {
 
-    }, [state, currCard.isWatched,])
+    }, [state, currCard?.isWatched])
 
 
 
 
-
+    if (!currCard) return ''
     return (
         <div className="card-details" >
             <span onClick={onToggleCardDetails} >
