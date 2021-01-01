@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "b111053a459d7e4da68cf0b770ae6005",
+    "revision": "26248bf09c535142c2ed5a3c7306a75e",
     "url": "/taskforce/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/taskforce/static/css/2.8dbe6964.chunk.css"
   },
   {
-    "revision": "f1c4899788ad51d96765",
+    "revision": "af13e8c237b5bbfda6d2",
     "url": "/taskforce/static/css/main.871249b9.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/taskforce/static/js/2.c6414b16.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "f1c4899788ad51d96765",
-    "url": "/taskforce/static/js/main.468f9444.chunk.js"
+    "revision": "af13e8c237b5bbfda6d2",
+    "url": "/taskforce/static/js/main.5b6f1d11.chunk.js"
   },
   {
     "revision": "0f02bb0319bbbd4cd2af",
