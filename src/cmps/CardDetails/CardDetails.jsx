@@ -166,7 +166,6 @@ export function CardDetails() {
                         </section>
                     </div>
                     <div className="right-side">
-                 
                         <RightSideMenu
                             className="right-side"
                             listid={listid}

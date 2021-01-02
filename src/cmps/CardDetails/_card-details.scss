@@ -37,6 +37,9 @@
                 width: 450px;
                 .title-section {
                     height: 50px;
+                    h3{
+                        cursor: pointer;
+                    }
                     .align-center .flex {
                         height: 25px;
                         align-items: center;

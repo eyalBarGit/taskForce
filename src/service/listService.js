@@ -1,4 +1,5 @@
 import UTILS from './utils'
+import cardService from './cardService'
 
 async function deleteList(currBoard, currList) {
   const newLists = currBoard.lists
@@ -82,17 +83,9 @@ async function _createList(listName,) {
 }
 
 function copyCard(cardToCopy) {
-  return {
-    id: UTILS.generatePassword(5),
-    title: cardToCopy.title,
-    desc: cardToCopy.desc,
-    cardCover: cardToCopy.cardCover,
-    checklist: cardToCopy.checklist,
-    isWatched: cardToCopy.isWatched,
-    dueDate: cardToCopy.dueDate,
-    labels: cardToCopy.labels,
-    createdAt: new Date().toLocaleDateString()
-  }
+  const newCard = cardService.copyCard(cardToCopy)
+  newCard.id = UTILS.generatePassword(5)
+  return newCard
 }
 
 

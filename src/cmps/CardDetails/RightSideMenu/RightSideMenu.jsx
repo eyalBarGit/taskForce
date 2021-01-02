@@ -93,11 +93,7 @@ export function RightSideMenu({ onToggleCardDetails, onToggleCover, isCoverOn,
         toggleShowCal(!isCalShown)
     }
 
-    useEffect(() => {
-        return () => {
-
-        }
-    }, [currBoard])
+    useEffect(() => { }, [currBoard])
 
 
 

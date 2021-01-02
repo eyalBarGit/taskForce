@@ -1,4 +1,5 @@
-import UTILS from '../service/utils'
+import UTILS from '../service/utils';
+import _ from 'lodash';
 
 function deleteCard(currBoard, currList, cardId) {
   const newCards = currBoard.cards
@@ -12,21 +13,16 @@ function deleteCard(currBoard, currList, cardId) {
 
 
 
-function copyCard(newCard) {
-  return new CopyCard(newCard)
+function copyCard(cardToCopy) {
+  const newCard = _.clone(cardToCopy)
+  console.log('newCard:', newCard)
+  newCard.id = UTILS.generatePassword(5)
+  return newCard
 }
 
-function CopyCard(cardToCopy) {
-    this.id = UTILS.generatePassword(5);
-    this.title = cardToCopy.title;
-    this.description = cardToCopy.description;
-    this.cardCover = cardToCopy.cardCover;
-    this.checklist = cardToCopy.checklist;
-    this.isWatched = false;
-    this.dueDate = cardToCopy.dueDate;
-    this.labels = cardToCopy.labels;
-    this.createdAt = new Date().toLocaleDateString()
-}
+
+
+
 
 function createCheckList(checkListName) {
   return {
