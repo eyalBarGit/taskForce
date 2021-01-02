@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { toggleCardDetails, toggleCardWatch, setDueDate, changeCardTitle } from '../../store/actions/cardActions'
 import { useHistory, useParams } from 'react-router-dom'
@@ -67,8 +67,8 @@ export function CardDetails() {
         const key = target.name
         const value = target.value
         newCardTitle[key] = value
-        setCardTitle((prevTitle) => ({
-            ...prevTitle,
+        setCardTitle((prevState) => ({
+            ...prevState,
             title: value
         }))
     };
@@ -79,13 +79,6 @@ export function CardDetails() {
         dispatch(changeCardTitle(currCard, cardTitle, currBoard))
         onSetCardTitle(false)
     }
-
-
-    useEffect(() => {
-
-    }, [state, currCard?.isWatched])
-
-
 
 
     if (!currCard) return ''

@@ -1,5 +1,4 @@
 import UTILS from '../service/utils';
-import _ from 'lodash';
 
 function deleteCard(currBoard, currList, cardId) {
   const newCards = currBoard.cards
@@ -14,8 +13,7 @@ function deleteCard(currBoard, currList, cardId) {
 
 
 function copyCard(cardToCopy) {
-  const newCard = _.clone(cardToCopy)
-  console.log('newCard:', newCard)
+  const newCard = JSON.parse(JSON.stringify(cardToCopy))
   newCard.id = UTILS.generatePassword(5)
   return newCard
 }
