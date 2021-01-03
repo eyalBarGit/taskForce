@@ -24,7 +24,7 @@ export function CardDetails() {
     const dispatch = useDispatch()
     const history = useHistory()
     const [isCardTitleChange, onSetCardTitle] = useState(false)
-    const currCheckList = currCard? Object.values(currCard.checklist):''
+    const currCheckList = currCard ? Object.values(currCard.checklist) : ''
     const [isMouseOver, setMouseOver] = useState(false)
 
     const ticket = <FontAwesomeIcon icon={faTicketAlt} />
@@ -113,7 +113,6 @@ export function CardDetails() {
 
                                 {isCardTitleChange &&
                                     <div className="flex">
-
                                         <form onSubmit={onChangeTitle}>
                                             <input autoComplete="off" onChange={onHandleChange} name="title" placeholder={currCard.title} type="text" />
                                         </form>
