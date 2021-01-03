@@ -2,7 +2,7 @@ import React, { useEffect, useState, useRef } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { BoardList } from '../../cmps/BoardList/BoardList'
 import { useParams } from 'react-router-dom'
-import { setActiveBoard, saveToStorage } from '../../store/actions/boardActions'
+import { setActiveBoard, saveToStorage ,disableStorageReset} from '../../store/actions/boardActions'
 import { createBoard } from '../../store/actions/boardActions';
 import { ActionForm } from '../../cmps/ActionForm/ActionForm';
 
@@ -31,6 +31,7 @@ export function HomePage() {
 
     useEffect(() => {
         dispatch(setActiveBoard(''))
+        dispatch(disableStorageReset())
     }, [dispatch])
 
 

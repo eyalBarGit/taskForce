@@ -184,6 +184,18 @@ export function saveToStorage(store) {
         }
     }
 }
+export function disableStorageReset() {
+    return async dispatch => {
+        try {
+            
+            dispatch(_disableStorageReset())
+
+        }
+        catch (err) {
+            throw err
+        }
+    }
+}
 
 
 
@@ -193,6 +205,14 @@ export function saveToStorage(store) {
 
 
 
+
+
+
+function _disableStorageReset() {
+    return {
+        type: 'DISABLE_STORAGE_RESET',
+    }
+}
 
 
 

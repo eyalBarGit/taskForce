@@ -1,14 +1,15 @@
 import UTILS from '../../service/utils'
 import boards from '../../data/boards'
 var initialState = UTILS.loadFromStorage('mainStore')
-if (!initialState || !initialState.boards['board-1']?.cards.hasOwnProperty('card-1'))
+if (!initialState || initialState.isStorageReset)
 
     initialState = {
         boards: boards,
         favBoards: [],
         activeBoard: '',
         isCardDetailShown: false,
-        isBgSideOpen: false
+        isBgSideOpen: false,
+        isStorageReset: true
     };
 
 export default function (state = initialState, action) {
@@ -572,6 +573,12 @@ export default function (state = initialState, action) {
                 favBoards: newFavBoards
             }
 
+
+        case 'DISABLE_STORAGE_RESET':
+            return {
+                ...state,
+                isStorageReset: false
+            };
 
         case 'GET_STATE':
             console.log('state:', state)
