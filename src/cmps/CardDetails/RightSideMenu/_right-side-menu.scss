@@ -32,6 +32,13 @@
             background-color: $HoverBtn;
         }
     }
+    .disabled {
+        color: gray !important;
+        &:hover {
+            background-color: #e2e4e9;
+            cursor: default;
+        }
+    }
     .check-list-btns {
         margin-block-end: 5px;
     }
@@ -70,5 +77,4 @@
         position: fixed;
         transform: translateX(50%);
     }
- 
 }

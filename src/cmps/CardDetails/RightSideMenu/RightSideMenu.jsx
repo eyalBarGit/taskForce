@@ -102,7 +102,7 @@ export function RightSideMenu({ onToggleCardDetails, onToggleCover, isCoverOn,
         <div className="right-side-menu flex column">
             <div className="btn-container">
                 <p>SUGGESTED</p>
-                <button className="btn-right-side">
+                <button className="btn-right-side disabled" disabled={true}>
                     <span>
                         {avatar}
                     </span>
@@ -110,7 +110,7 @@ export function RightSideMenu({ onToggleCardDetails, onToggleCover, isCoverOn,
             </div>
             <div className="btn-container">
                 <p>ADD TO CARD</p>
-                <button className="btn-right-side">
+                <button className="btn-right-side disabled" disabled={true}>
                     <span>
                         {avatar}
                     </span>
@@ -142,7 +142,7 @@ export function RightSideMenu({ onToggleCardDetails, onToggleCover, isCoverOn,
                 />
             </div>
             }
-            <button className="btn-right-side">
+            <button className="btn-right-side disabled" disabled={true}>
                 <span>
                     {paperClip}
                 </span>
