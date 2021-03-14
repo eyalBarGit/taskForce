@@ -35,7 +35,7 @@ export function CardDetails() {
 
     const onToggleCardDetails = () => {
         dispatch(toggleCardDetails(false))
-        history.push(`/boards/${boardid}`)
+        history.goBack()
     }
 
 

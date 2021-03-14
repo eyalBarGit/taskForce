@@ -11,6 +11,7 @@ import { faPlus } from '@fortawesome/free-solid-svg-icons'
 import { faStar } from '@fortawesome/free-solid-svg-icons'
 import { AppHeaderMenu } from './AppHeaderMenu/AppHeaderMenu';
 import { BoardsMenu } from './BoardsMenu/BoardsMenu'
+import { BlackScreen } from '../CardDetails/BlackScreen/BlackScreen';
 
 
 export function AppHeader() {
@@ -81,6 +82,9 @@ export function AppHeader() {
                         }
                         {isBoardsMenuVis &&
                             <div>
+                                <span onClick={() => setBoardsMenuVis(false)} >
+                                    <BlackScreen />
+                                </span>
                                 <BoardsMenu closeBoard={() => setBoardsMenuVis(false)} currBoard={currBoard} />
 
                             </div>
@@ -90,8 +94,12 @@ export function AppHeader() {
                         <h1>TaskForce</h1>
                     </div>
                     <div className="right-side flex align-center">
+
                         {currBoard &&
-                            <button className="app-header-menu-btn" onClick={onToggleAppHeaderMenu}>{plusSign}</button>
+                            <div>
+
+                                <button className="app-header-menu-btn" onClick={onToggleAppHeaderMenu}>{plusSign}</button>
+                            </div>
                         }
                     </div>
                 </div>
@@ -108,11 +116,16 @@ export function AppHeader() {
                         <p className="save-notification">saved!</p>
                     }
                     {isHeaderMenuVisible &&
-                        <AppHeaderMenu
-                            onRemoveSavedBoard={removeSavedBoard}
-                            currBoard={currBoard}
-                            activeBoard={activeBoard}
-                            onToggleAppHeaderMenu={onToggleAppHeaderMenu} />
+                        <div>
+                            <span onClick={() => setHeaderMenu(false)} >
+                                <BlackScreen />
+                            </span>
+                            < AppHeaderMenu
+                                onRemoveSavedBoard={removeSavedBoard}
+                                currBoard={currBoard}
+                                activeBoard={activeBoard}
+                                onToggleAppHeaderMenu={onToggleAppHeaderMenu} />
+                        </div>
                     }
                 </div>
             }

@@ -36,9 +36,12 @@ export function CardCheckList({ currCheckList, currCard, currBoard }) {
             let newCheckedItems = checkedItems
             newCheckedItems.splice(index, 1)
             setCheckItems([...newCheckedItems])
+            calculatePercentage()
         },
         [currBoard, currCard, currCheckList, dispatch, checkedItems]
     )
+
+
 
     const onToggleItemVisibility = () => {
         setItemVisible(!isAddItemVisible)
