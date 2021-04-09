@@ -9,6 +9,7 @@
         height: 88vh;
         border-radius: 3px;
         background-color: $menuBg;
+        overflow-y: auto;
         .main {
             position: relative;
             padding: 25px;
