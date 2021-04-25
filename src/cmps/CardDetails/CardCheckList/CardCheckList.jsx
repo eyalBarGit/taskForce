@@ -27,7 +27,23 @@ export function CardCheckList({ currCheckList, currCard, currBoard }) {
     }
 
 
-    const onRemoveCheckList = () => { dispatch(removeCheckList(currBoard, currCard, currCheckList)) }
+    const calculatePercentage = useCallback(
+        () => {
+            var numberOfCheckLists = Object.values(currCheckList.list).length;
+            var numberOfCehckedItems = checkedItems.length;
+            var percent = (numberOfCehckedItems * 100) / numberOfCheckLists;
+            isNaN(percent) ? setCompleted(0) : setCompleted(percent.toFixed())
+        },
+        [currCheckList.list, checkedItems.length],
+    )
+
+
+    useEffect(() => {
+        calculatePercentage()
+
+    }, [checkedItems, calculatePercentage])
+
+    const onRemoveCheckList = () => { dispatch(removeCheckList(currCard, currCheckList)) }
 
     const onRemoveCheckListItem = useCallback(
         (item) => {
@@ -36,9 +52,9 @@ export function CardCheckList({ currCheckList, currCard, currBoard }) {
             let newCheckedItems = checkedItems
             newCheckedItems.splice(index, 1)
             setCheckItems([...newCheckedItems])
-            calculatePercentage()
+            // calculatePercentage()
         },
-        [currBoard, currCard, currCheckList, dispatch, checkedItems]
+        [calculatePercentage, currBoard, currCard, currCheckList, dispatch, checkedItems,]
     )
 
 
@@ -57,25 +73,17 @@ export function CardCheckList({ currCheckList, currCard, currBoard }) {
             newCheckedItems.splice(index, 1)
             setCheckItems([...newCheckedItems])
             dispatch(checkItem(currBoard, currCard, currCheckList, currItem))
-            calculatePercentage()
+            // calculatePercentage()
             return
         }
 
         setCheckItems([...checkedItems, { ...item }])
         dispatch(checkItem(currBoard, currCard, currCheckList, currItem))
-        calculatePercentage()
+        // calculatePercentage()
     }
 
 
-    const calculatePercentage = useCallback(
-        () => {
-            var numberOfCheckLists = Object.values(currCheckList.list).length;
-            var numberOfCehckedItems = checkedItems.length;
-            var percent = (numberOfCehckedItems * 100) / numberOfCheckLists;
-            isNaN(percent) ? setCompleted(0) : setCompleted(percent.toFixed())
-        },
-        [currCheckList.list, checkedItems.length],
-    )
+
 
     const updatePercentageOnMount = useCallback(
         () => {
