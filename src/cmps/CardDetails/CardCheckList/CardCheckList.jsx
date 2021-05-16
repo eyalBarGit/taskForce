@@ -43,7 +43,7 @@ export function CardCheckList({ currCheckList, currCard, currBoard }) {
 
     }, [checkedItems, calculatePercentage])
 
-    const onRemoveCheckList = () => { dispatch(removeCheckList(currCard, currCheckList)) }
+    const onRemoveCheckList = () => { dispatch(removeCheckList(currBoard,currCard, currCheckList)) }
 
     const onRemoveCheckListItem = useCallback(
         (item) => {
@@ -52,7 +52,6 @@ export function CardCheckList({ currCheckList, currCard, currBoard }) {
             let newCheckedItems = checkedItems
             newCheckedItems.splice(index, 1)
             setCheckItems([...newCheckedItems])
-            // calculatePercentage()
         },
         [calculatePercentage, currBoard, currCard, currCheckList, dispatch, checkedItems,]
     )
@@ -73,13 +72,11 @@ export function CardCheckList({ currCheckList, currCard, currBoard }) {
             newCheckedItems.splice(index, 1)
             setCheckItems([...newCheckedItems])
             dispatch(checkItem(currBoard, currCard, currCheckList, currItem))
-            // calculatePercentage()
             return
         }
 
         setCheckItems([...checkedItems, { ...item }])
         dispatch(checkItem(currBoard, currCard, currCheckList, currItem))
-        // calculatePercentage()
     }
 
 
