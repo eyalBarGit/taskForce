@@ -41,7 +41,7 @@ export function CardCheckList({ currCheckList, currCard, currBoard }) {
     useEffect(() => {
         calculatePercentage()
 
-    }, [checkedItems, calculatePercentage])
+    }, [checkedItems, calculatePercentage,currCheckList])
 
     const onRemoveCheckList = () => { dispatch(removeCheckList(currBoard,currCard, currCheckList)) }
 

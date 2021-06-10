@@ -490,7 +490,6 @@ export default function (state = initialState, action) {
             };
 
         case 'REMOVE_CHECKLIST':
-            console.log('action.data:', action.data)
             const newChecklist = state.boards[action.data.currBoard.id].cards[action.data.currCard.id].checklist
             delete newChecklist[action.data.checkListToRemove.id]
             return {
