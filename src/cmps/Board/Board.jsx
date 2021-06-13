@@ -11,7 +11,6 @@ import {
     setActiveBoard,
     toggleBgSide
 } from '../../store/actions/boardActions'
-// import { toggleCardDetails } from '../../store/actions/cardActions'
 import { DragDropContext, Droppable } from 'react-beautiful-dnd'
 import { BoardBackground } from '../../cmps/BoardBackground/BoardBackground'
 import { CardDetails } from '../CardDetails/CardDetails'

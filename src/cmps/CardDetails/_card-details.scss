@@ -38,7 +38,7 @@
                 width: 450px;
                 .title-section {
                     height: 50px;
-                    h3{
+                    h3 {
                         cursor: pointer;
                     }
                     .align-center .flex {
@@ -121,8 +121,8 @@
     }
     @media (max-width: 750px) {
         .card-details-board {
-            width: 100vw;
-         height: fit-content;
+            width: 100%;
+            height: fit-content;
             z-index: 60;
             .main {
                 .left-side {
@@ -130,12 +130,11 @@
                 }
                 .right-side {
                     width: 15px;
-                    .mobile-menu {
-                        display: block;
-                    }
+                    // .mobile-menu {
+                    //     display: block;
+                    // }
                 }
             }
         }
-       
     }
 }

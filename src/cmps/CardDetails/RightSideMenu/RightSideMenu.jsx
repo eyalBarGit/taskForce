@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { CopyCard } from '../CopyCard/CopyCard'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faUser, faTag, faTasks, faColumns, faClock, faPaperclip, faArrowRight, faCopy, faEye, faTrashAlt, faShareAlt, } from '@fortawesome/free-solid-svg-icons'
@@ -93,7 +93,6 @@ export function RightSideMenu({ onToggleCardDetails, onToggleCover, isCoverOn,
         toggleShowCal(!isCalShown)
     }
 
-    useEffect(() => { }, [currBoard])
 
 
 

@@ -4,7 +4,6 @@ import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom'
 import { faCheck } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { BlackScreen } from '../../CardDetails/BlackScreen/BlackScreen';
 
 export function BoardsMenu({ currBoard, closeBoard }) {
     const state = useSelector(state => state.mainStore)
@@ -16,7 +15,7 @@ export function BoardsMenu({ currBoard, closeBoard }) {
     if (!boardid) return '...loading'
     return (
         <div className="boards-menu">
-         
+
             <div className="main-menu-container ">
                 <div className="flex column align-center space-between">
                     {boards.map(board => {
@@ -33,9 +32,7 @@ export function BoardsMenu({ currBoard, closeBoard }) {
                 </div>
 
             </div>
-            <div className="close-board-menu flex">
-                {/* <button className="close-btn" onClick={closeBoard}>X</button> */}
-            </div>
+
         </div >
     )
 
