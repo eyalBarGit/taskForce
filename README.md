@@ -6,3 +6,4 @@ React hooks,
 Redux, 
 Styled Components
 React-Beautiful-DND
+Scss
