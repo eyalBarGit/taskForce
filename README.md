@@ -1,9 +1,14 @@
 # TaskForce - Trello like app
 
 This project was created using react.js .
-Stack:
+### stack:
+```
 React hooks, 
 Redux, 
 Styled Components
 React-Beautiful-DND
 Scss
+```
+
+
+
